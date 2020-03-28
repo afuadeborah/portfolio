@@ -1,0 +1,43 @@
+// Landing Page
+
+.welcome {
+    background-color: $black;
+    color: $white;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        // margin: 0 auto 6% auto;
+
+            .name {
+                box-shadow: inset 0px -6px 0px 0px #FFA818;
+            }
+        }
+}
+
+
+.welcome-name { 
+    grid-area: 4 / 2 / 7 / 9; 
+}
+
+.arrow {
+    @include font-size(55);
+    cursor: pointer;
+    
+    &:active {
+        border-bottom: 4px solid $orange;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+        color: $yellow;
+    }
+}
+
+// Media Query at 830 for horizontal scroll
+// Media Query at 530 for h1

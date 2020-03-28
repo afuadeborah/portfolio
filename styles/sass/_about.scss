@@ -1,0 +1,146 @@
+// About Section
+.about-me {
+    min-height: 100vh;
+    padding-top: 20px;
+
+    .about-name {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+
+
+.about-me-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin: 45px 0;
+    width: 100%;
+
+        .about-pic {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 30px;
+            width: 35%;
+
+                img {
+                    height: auto;
+                }
+        }
+}       
+// }
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    
+        p {
+            font-size: 1.8rem; 
+
+            &:nth-of-type(2) {
+                margin: 25px 0;
+            }
+        }
+
+        
+}
+
+h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include font-size(35);
+    text-decoration: underline 5px $orange;
+    margin-bottom: 10px;
+
+    span {
+        @include font-size(25);
+        
+    }
+}
+
+// Skills Section
+
+.skills  {
+    height: 100vh;
+
+    h2 {
+        text-decoration: underline 5px $yellow; 
+    }
+
+
+}
+
+h3,
+.skills p {
+    font-weight: lighter;
+}
+
+
+// Relevant Skills
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5% auto;
+
+
+        .skill-row {
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            width: 90%; 
+            margin: 15px auto;
+            
+        }
+}
+
+
+
+// Soft Skills
+.soft-skills { 
+    display: flex;
+    flex-direction: column;
+    
+
+        h3 {
+            margin: 10px auto;
+        }
+
+        .soft-skills-container {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+}
+
+.skills-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: calc(25% - 10px);
+
+        i {
+            font-size: 5.5rem;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.5rem;
+        }
+}
+
+
+
+    
+// Media Query 1000px for text beside picture change font size

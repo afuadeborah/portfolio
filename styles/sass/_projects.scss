@@ -1,0 +1,59 @@
+.projects {
+    height: 100%;
+    h2 {
+        text-decoration: underline 5px $orange;
+    }
+
+    // .project-container {
+    //     width: 80%;
+    //     margin: 0 auto;
+    // }
+}
+
+.project {
+    display: flex;
+
+    i {
+        font-size: 4.5rem;
+
+        &:hover {
+            color: $orange;
+            transform: scale(1.05);
+            
+        }
+    } 
+
+    a {
+        text-transform: uppercase;
+
+        &:hover {
+            text-decoration: underline 4px $orange; 
+        }
+    }
+
+}
+
+.project-two .project-text a {
+    text-transform: none;
+}
+
+.mockup,
+.project-text {
+    width: calc(50% - 50px);
+    display: flex;
+    justify-content: center;
+}
+
+.project-text {
+    flex-direction: column;
+    
+}
+
+.project-text:nth-child(2){
+    margin-left: 50px;
+}
+
+.project-text:nth-child(1){
+    margin-right: 50px;
+    text-align: right;
+}

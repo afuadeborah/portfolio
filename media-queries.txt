@@ -1,0 +1,14 @@
+- Fix ghostspace on sections with aos
+
+1000 px
+- Adjust text and photo
+- Adjust font-sizes here where necessary
+
+768px
+    - Fix size of spacer
+    - Stack photo and text in About Me
+    - Make Skills 3 x 3
+    - Stack projects
+
+
+Move out github in skills section
