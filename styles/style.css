@@ -1287,13 +1287,18 @@ h3,
           flex-direction: column;
 }
 
-.project-text:nth-child(2) {
+.project-text:nth-child(2),
+.mockup:nth-child(2) {
   margin-left: 50px;
 }
 
 .project-text:nth-child(1) {
-  margin-right: 50px;
   text-align: right;
+}
+
+.project-text:nth-child(1),
+.mockup:nth-child(1) {
+  margin-right: 50px;
 }
 
 html {
@@ -1302,6 +1307,7 @@ html {
 
 img {
   min-width: 100%;
+  height: auto;
   display: block;
 }
 

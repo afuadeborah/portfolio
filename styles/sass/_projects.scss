@@ -4,10 +4,7 @@
         text-decoration: underline 5px $orange;
     }
 
-    // .project-container {
-    //     width: 80%;
-    //     margin: 0 auto;
-    // }
+
 }
 
 .project {
@@ -49,11 +46,17 @@
     
 }
 
-.project-text:nth-child(2){
+.project-text:nth-child(2),
+.mockup:nth-child(2){
     margin-left: 50px;
 }
 
 .project-text:nth-child(1){
-    margin-right: 50px;
-    text-align: right;
+    text-align: right;   
 }
+
+.project-text:nth-child(1),
+.mockup:nth-child(1){
+    margin-right: 50px;
+}
+
