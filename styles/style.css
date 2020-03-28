@@ -1226,6 +1226,11 @@ h3,
   font-size: 5.5rem;
 }
 
+.skills-title i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .skills-title p {
   text-align: center;
   font-size: 1.5rem;
@@ -1238,6 +1243,14 @@ h3,
 .projects h2 {
   -webkit-text-decoration: underline 5px #F06000;
           text-decoration: underline 5px #F06000;
+}
+
+.projects h3,
+.projects h4,
+.projects .icon-text,
+.projects .project-links,
+.projects .project-icons-container {
+  margin: 10px 0;
 }
 
 .project {
@@ -1265,8 +1278,8 @@ h3,
           text-decoration: underline 4px #F06000;
 }
 
-.project-two .project-text a {
-  text-transform: none;
+.project p:first-of-type {
+  margin: 5px 0;
 }
 
 .mockup,
@@ -1287,6 +1300,12 @@ h3,
           flex-direction: column;
 }
 
+.project-text .project-icons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .project-text:nth-child(2),
 .mockup:nth-child(2) {
   margin-left: 50px;
@@ -1296,9 +1315,21 @@ h3,
   text-align: right;
 }
 
+.project-text:nth-child(1) .project-icons-container {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .project-text:nth-child(1),
 .mockup:nth-child(1) {
   margin-right: 50px;
+}
+
+.project-icons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 html {

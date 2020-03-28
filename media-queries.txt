@@ -12,3 +12,7 @@
 
 
 Move out github in skills section
+
+Make a funciton on hover to show the name of the skills in the project section.
+
+Add span and aria hidden to icons

@@ -1,7 +1,16 @@
 .projects {
     height: 100%;
+
     h2 {
         text-decoration: underline 5px $orange;
+    }
+
+    h3,
+    h4,
+    .icon-text,
+    .project-links,
+    .project-icons-container {
+        margin: 10px 0;
     }
 
 
@@ -27,12 +36,13 @@
             text-decoration: underline 4px $orange; 
         }
     }
+    
+    p:first-of-type {
+        margin: 5px 0;
+    }
 
 }
 
-.project-two .project-text a {
-    text-transform: none;
-}
 
 .mockup,
 .project-text {
@@ -43,6 +53,11 @@
 
 .project-text {
     flex-direction: column;
+
+    .project-icons-container {
+        display: flex;
+    
+    }
     
 }
 
@@ -52,7 +67,11 @@
 }
 
 .project-text:nth-child(1){
-    text-align: right;   
+    text-align: right; 
+    
+    .project-icons-container {
+        justify-content: flex-end;
+    }
 }
 
 .project-text:nth-child(1),
@@ -60,3 +79,8 @@
     margin-right: 50px;
 }
 
+
+.project-icons-container {
+    display: flex;
+    // justify-content: space-between;
+}

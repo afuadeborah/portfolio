@@ -91,106 +91,106 @@
 
     <!-- Skills -->
     <section class="skills">
-        <div class="wrapper">
-            <h2>Relevant Skills</h2>
+        <li class="wrapper">
+            <h2 id="scramble-skill">Relevant Skills</h2>
         
             <div class="skills-container">
-                <div class="skill-row">
-                    <div class="skills-title">
+                <ul class="skill-row">
+                    <li class="skills-title">
                         <i class="devicons devicons devicons-html5"></i>
                         <p>HTML5</p>
-                    </div>
+                    </li>
 
-                    <div class="skills-title">
-                        <i class="devicons devicons-css3"></i>
+                    <li class="skills-title">
+                        <i class="devicons devicons-css3" id="skill-icon"></i>
                         <p>CSS</p>
-                    </div>
+                    </li>
 
-                    <div class="skills-title">
+                    <li class="skills-title">
                         <i class="devicons devicons-sass"></i>
                         <p>Sass + SCSS</p>
-                    </div>
+                    </li>
                 
-                    <div class="skills-title">
+                    <li class="skills-title">
                         <i class="devicons devicons-javascript_badge"></i>
                         <p>JavaScript + ES6</p>
-                    </div>
-                </div>
+                    </li>
+                </ul>
 
-                <div class="skill-row">
-                    <div class="skills-title">
+                <ul class="skill-row">
+                    <li class="skills-title">
                         <i class="devicons devicons-jquery"></i>
                         <p>jQuery</p>
-                    </div>
+                    </li>
 
-                    <div class="skills-title">
+                    <li class="skills-title">
                         <i class="material-icons">settings_ethernet</i>
                         <p>APIs
                             <br>
                             (AJAX + Axios)
                         </p>
-                    </div>
+                    </li>
                 
-                    <div class="skills-title">
+                    <li class="skills-title">
                         <i class="devicons devicons devicons-react"></i>
                         <p>React</p>
-                    </div>
+                    </li>
 
-                    <div class="skills-title">
+                    <li class="skills-title">
                         <i class="devicons devicons-firebase"></i>
                         <p>Firebase</p>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             
-                <div class="skill-row">
+                <ul class="skill-row">
                 
-                    <div class="skills-title">
+                    <li class="skills-title">
                         <i class="devicons devicons-git"></i>
                         <p>Git</p>
-                    </div>
+                    </li>
                     
 
-                    <div class="skills-title">
+                    <li class="skills-title">
                         <i class="devicons devicons-github_badge"></i>
                         <p>Github</p>
-                    </div>
+                    </li>
 
-                    <div class="skills-title">
+                    <li class="skills-title">
                         <i class="devicons devicons-terminal_badge"></i>
                         <p>Terminal</p>
-                    </div>
+                    </li>
         
 
-                    <div class="skills-title">
+                    <li class="skills-title">
                         <i class="devicons devicons-responsive"></i>
                         <p>Responsive
                         <br>
                         Design</p>
-                    </div>
-                </div>
+                    </li>
+                </ul>
 
-                <div class="skill-row">
-                    <div class="skills-title">
+                <ul class="skill-row">
+                    <li class="skills-title">
                         <i class="material-icons">accessibility_new</i>
                         <p>Accessibility</p>
-                    </div>
+                    </li>
 
-                    <div class="skills-title">
+                    <li class="skills-title">
                         <i class="material-icons client">group</i>
                         <p>Customer Service</p>
-                    </div>
+                    </li>
     
-                    <div class="skills-title">
+                    <li class="skills-title">
                         <i class="material-icons collab">group_work</i>
                         <p>Collaboration</p>
-                    </div>
+                    </li>
     
-                    <div class="skills-title">
+                    <li class="skills-title">
                         <i class="material-icons remote">device_hub</i>
                         <p>Remote Work</p>
-                    </div>
+                    </li>
 
-                </div>
+                </ul>
             </div>
                 <!-- <div class="skill-row">
 
@@ -216,7 +216,7 @@
     <section class="projects" id="projects">
         <div class="wrapper">
 
-            <h2>Projects</h2>
+            <h2 id="scramble-project">Projects</h2>
 
             <div class="project-container">
                 <!-- In My Feelings -->
@@ -233,16 +233,33 @@
 
                         <div class="made-with">
                             <h4>Made With</h4>
-                            <div class="project-icons-container">
-                                <i class="devicons devicons devicons-html5"
-                                title="HTML5" alt="HTML5"></i>
-                                <i class="devicons devicons-css3"></i>
-                                <i class="devicons devicons-javascript_badge"></i>
-                                <i class="devicons devicons devicons-react"></i>
-                                <i class="devicons devicons-firebase"></i>
-                                <i class="material-icons">settings_ethernet</i>
-                            </div>
+                            <ul class="project-icons-container">
+                                <li>
+                                    <i class="devicons devicons devicons-html5" id="skill-icon"
+                                    title="HTML5" alt="HTML5"></i>
+                                </li>
 
+                                <li>
+                                    <i class="devicons devicons-css3" id="skill-icon"></i>
+                                </li>
+                                <li>
+                                    <i class="devicons devicons-javascript_badge" id="skill-icon"></i>
+                                </li>
+                                <li>
+                                    <i class="devicons devicons devicons-react" id="skill-icon"></i>
+                                </li>
+                                <li>
+                                    <i class="devicons devicons-firebase" id="skill-icon"></i>
+                                </li>
+                                <li>
+                                    <i class="material-icons">settings_ethernet</i>
+                                </li>
+                                   
+                            </ul>
+
+                        </div>
+
+                        <div class="icon-text">
 
                         </div>
 
@@ -285,14 +302,19 @@
                             alt="Go to Julia Dufresne's personal page">Julia Dufresne</a>.
                         </p>
 
-                        <div class="project-icons-container">
+                        <div class="made-with">
                             <h4>Made With</h4>
-                            <div class="project-icons">
-                                <i class="devicons devicons devicons-html5" title="HTML5" alt="HTML5"></i>
-                                <i class="devicons devicons-sass"></i>
-                                <i class="devicons devicons-jquery"></i>
-                                
-                            </div>
+                            <ul class="project-icons-container">
+                                <li>
+                                    <i class="devicons devicons devicons-html5"  id="skill-icon" title="HTML5" alt="HTML5"></i>
+                                </li>
+                                <li>
+                                    <i class="devicons devicons-sass" id="skill-icon" ></i>
+                                </li>
+                                <li>
+                                    <i class="devicons devicons-jquery" id="skill-icon"></i>
+                                </li> 
+                            </ul>
 
                         </div>
                         
@@ -333,14 +355,23 @@
                         <p>What's your a e s t h e t i c?</p>
                         <p>Quiz app which chooses the user's aesthetic from user-selected options to questions.</p>
 
-                        <div class="project-icons-container">
+                        <div class="made-with">
                             <h4>Made With</h4>
-                            <div class="project-icons">
-                                <i class="devicons devicons devicons-html5" title="HTML5" alt="HTML5"></i>
-                                <i class="devicons devicons-sass"></i>
-                                <i class="devicons devicons-jquery"></i>
-                                <i class="material-icons">settings_ethernet</i>
-                            </div>
+                            <ul class="project-icons-container">
+                                <li>
+                                    <i class="devicons devicons devicons-html5"  id="skill-icon"title="HTML5" alt="HTML5"></i>
+                                </li>
+                                <li>
+                                    <i class="devicons devicons-sass" id="skill-icon"></i>
+                                </li>
+                                <li>
+                                    <i class="devicons devicons-jquery" id="skill-icon"></i>
+                                </li>
+                                <li>
+                                    <i class="material-icons" id="skill-icon">settings_ethernet</i>
+                                </li>
+                                   
+                            </ul>
 
                         </div>
                         <!-- Links -->
@@ -374,13 +405,19 @@
                         <h3>Everyday Life With Harper</h3>
                         <p>Mulit-page PSD conversion made using a client brief and design files. Responsive across devices.</p>
 
-                        <div class="project-icons-container">
+                        <div class="made-with">
                             <h4>Made With</h4>
-                            <div class="project-icons">
-                                <i class="devicons devicons devicons-html5" title="HTML5" alt="HTML5"></i>
-                                <i class="devicons devicons-sass"></i>
-                                <i class="devicons devicons-responsive"></i>
-                            </div>
+                            <ul class="project-icons-container">
+                                <li>
+                                    <i class="devicons devicons devicons-html5"  id="skill-icon"title="HTML5" alt="HTML5"></i>
+                                </li>
+                                <li>
+                                    <i class="devicons devicons-sass" id="skill-icon"></i>
+                                </li>
+                                <li>
+                                    <i class="devicons devicons-responsive" id="skill-icon"></i>
+                                </li>   
+                            </ul>
 
                         </div>
 
@@ -412,13 +449,20 @@
                         <h3>Tasty</h3>
                         <p>PSD conversion made from client brief and design files using floats for layout. Responsive across devices.</p>
 
-                        <div class="project-icons-container">
+                        <div class="made-with">
                             <h4>Made With</h4>
-                            <div class="project-icons">
-                                <i class="devicons devicons devicons-html5" title="HTML5" alt="HTML5"></i>
-                                <i class="devicons devicons-css3"></i>
-                                <i class="devicons devicons-responsive"></i>
-                            </div>
+                            <ul class="project-icons-container">
+                                <li>
+                                    <i class="devicons devicons devicons-html5" id="skill-icon" title="HTML5" alt="HTML5"></i>
+                                </li>
+                                <li>
+                                    <i class="devicons devicons-css3" id="skill-icon"></i>
+                                </li>
+                                <li>
+                                    <i class="devicons devicons-responsive" id="skill-icon"></i>
+                                </li>
+                  
+                            </ul>
 
                         </div>
 
@@ -437,21 +481,6 @@
                 </div>
             </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
 
     </section>
@@ -467,7 +496,6 @@
         
 
 
-    <!-- Create IDs on each relevant section so it jumps there -->
   
    
 

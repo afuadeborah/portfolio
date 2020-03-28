@@ -132,6 +132,10 @@ h3,
 
         i {
             font-size: 5.5rem;
+
+            &:hover {
+                transform: scale(1.2);
+            }
         }
 
         p {
