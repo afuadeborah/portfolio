@@ -16,18 +16,8 @@ const app = {};
 //     }, 1200);
 //   }
 
-// app.Scrambler = () => ({
-//     target: '#scramble-name',
-//     random: [1000, 12000],
-//     speed: 100,
-//     text: 'About Me',
-//     beforeEach: function(element) {
-//       console.log(`${element} about to scramble`);
-//     },
-//     afterAll: function(elements) {
-//       console.log('all done!');
-//     }
-//   });
+
+
 
 
 
@@ -404,6 +394,7 @@ app.init = () => {
     let messengerSkills = new MessengerSkills($('#scramble-skill'));
 
     let messengerProjects = new MessengerProjects($('#scramble-project'));
+
 
 
 }

@@ -56,14 +56,14 @@
 
     <!-- About Me -->
     <section class="about-me" id="about">
-        <div class="wrapper about-wrapper">
+        <div class="wrapper">
             
             <div class="about-name">
                 <h2 id="scramble-name">About Me</h2> 
                 <p>/ahFOO-ah dEb-ruh/</p>
             </div>  
 
-            <div class="about-me-container">
+            <div class="about-me-container"  style="overflow-x: hidden">
                 <div class="about-pic" data-aos="fade-right" data-aos-duration="1000">
                     <img src="./assets/afua-deborah.jpg" alt="Afua Deborah standing in front of yellow background">
                 </div>
@@ -71,12 +71,11 @@
                 <div class="about-text" data-aos="fade-left" data-aos-duration="1000">
 
 
-                        <p>Hello World! I'm Afua Deborah, a Front-End Web Developer based out of Toronto.  From choreography on a stage to lines of code on a web page, I love combining the worlds of logic and design to create eye-catching, accessible, and user-friendly websites and applications.</p>
+                        <p>Hello World! I'm Afua Deborah, a Front-End Web Developer based out of Toronto.  From choreography on a stage to lines of code on a web page, I love combining the worlds of logic and creative design to make eye-catching, accessible, and user-friendly websites and applications.</p>
 
                         <p>Technology leads, society follows. The move towards increasing inclusivity and diversity in the industry through representation is of importance to me.</p>
 
-                        <p>I'm excited to make the leap into an evergreen industry and to continue refining my skills with the right company. Drop me a line <a href="#contact">below</a>!</p>
-                    <!-- Fix/shorten this -->
+                        <p>I'm excited to make the leap into an evergreen industry and to continue refining my skills with the right company. Drop me a line and/or your favourite restaurant in Toronto <a href="#contact">below</a>!</p>
                 </div>
             </div>
 
@@ -125,10 +124,7 @@
 
                     <li class="skills-title">
                         <i class="material-icons">settings_ethernet</i>
-                        <p>APIs
-                            <br>
-                            (AJAX + Axios)
-                        </p>
+                        <p>REST APIs</p>
                     </li>
                 
                     <li class="skills-title">
@@ -218,7 +214,7 @@
 
             <h2 id="scramble-project">Projects</h2>
 
-            <div class="project-container">
+            <div class="project-container" style="overflow-x: hidden">
                 <!-- In My Feelings -->
                 <div class="project project-one">
 
@@ -259,9 +255,9 @@
 
                         </div>
 
-                        <div class="icon-text">
+                        <ul class="icon-text">
 
-                        </div>
+                        </ul>
 
                         <div class="project-links">
                             <a href="https://afuadeborah.github.io/afua-frimpong-project-5/"
@@ -483,6 +479,87 @@
 
         </div>
 
+    </section>
+
+    <div class="spacer"></div>
+
+    <section class="contact" id="contact">
+        <div class="wrapper">
+            <h2>Contact Me</h2>
+            <p>If you have any questions about me or my projects, or would like to (politely)
+                argue about the best albums of the 2010s, contact me below!</p>
+
+                <form
+                action="https://formspree.io/mwkqdqjr"
+                method="POST">
+                <label>
+                  Your email:
+                  <input type="text" name="_replyto">
+                </label>
+                <label>
+                  Your message:
+                  <textarea name="message">
+
+                  </textarea>
+                </label>
+              
+                <!-- your other form fields go here -->
+              
+                <button type="submit">Send</button>
+              </form>
+            
+            <h3>Otherwise contact me at</h3>
+            <ul class="contact-icons-container">
+                <li>
+                        
+                    <a href="https://github.com/afuadeborah"
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    tabIndex="0"
+                    aria-hidden="true"
+                    title= "@afuadeborah on Github"
+                    alt="Go to Afua's Github">
+                        <i class="devicons devicons-github_badge"></i>
+                    </a>
+                    
+                    <h5>@afuadeborah</h5>
+
+                </li>
+                <li>
+                    <a href="https://medium.com/@afuafrimpong4"
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    tabIndex="0"
+                    aria-hidden="true"
+                    title= "@afuafrimpong4 on Medium"
+                    alt="Go to Afua's Medium blog">
+
+                        <!-- Icon here -->
+
+                    </a>
+                    <h5>@afuafrimpong4</h5>
+                   
+                </li>
+                <li>
+                    
+                </li>
+                <li>
+                    <a href="https://twitter.com/afuadeborah_"
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    tabIndex="0"
+                    aria-hidden="true"
+                    title="@afuadeborah_ on Twitter"
+                    alt="Go to Afua's Twitter">
+
+                       <!-- Icon here -->
+
+                    </a>
+                    <h5>@afuadeborah_</h5>
+                </li>
+            </ul>
+
+        </div>
     </section>
 
 

@@ -1,11 +1,12 @@
 @import 'setup';
 @import 'variables';
 @import 'devicons';
+
 @import 'navigation';
 @import 'welcome';
 @import 'about';
 @import 'projects';
-
+@import 'contact';
 
 
 // Default Styling & Stripping 
@@ -29,6 +30,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 p,
 button,
 form,
@@ -86,6 +88,6 @@ h1 {
 
 
 
-// Wrap contents of svg sections in divs and flex items inside
+
 
 
