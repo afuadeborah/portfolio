@@ -1313,12 +1313,6 @@ h3,
   margin-right: 50px;
 }
 
-.project-icons-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .contact h2 span {
   -webkit-box-shadow: inset 0px -5px 0px 0px #FFA818;
           box-shadow: inset 0px -5px 0px 0px #FFA818;
