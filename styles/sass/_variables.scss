@@ -6,6 +6,10 @@ $sen-font: "Sen", sans-serif;
     font-size: ($size/10) * 1rem;
 }
 
+@mixin underline($colour){
+    box-shadow: inset 0px -5px 0px 0px $colour;
+}
+
 
 
 // Colours

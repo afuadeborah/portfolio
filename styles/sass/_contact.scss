@@ -1,3 +1,11 @@
+.contact {
+    
+    h2 span {
+        @include underline($yellow);
+    }
+}
+
+
 .contact-icons-container {
     display: flex;
     justify-content: space-around;

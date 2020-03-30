@@ -1061,6 +1061,11 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
           align-items: center;
 }
 
+.about-me .about-name h2 {
+  -webkit-box-shadow: inset 0px -5px 0px 0px #F06000;
+          box-shadow: inset 0px -5px 0px 0px #F06000;
+}
+
 .about-me-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1111,38 +1116,21 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   font-size: 1.8rem;
 }
 
-.about-text p:nth-of-type(2) {
+.about-text p:nth-of-type(2), .about-text p:nth-of-type(3) {
   margin: 25px 0;
 }
 
-h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 3.5rem;
-  -webkit-text-decoration: underline 5px #F06000;
-          text-decoration: underline 5px #F06000;
-  margin-bottom: 10px;
-}
-
-h2 span {
-  font-size: 2.5rem;
+.about-text p span {
+  font-weight: bold;
 }
 
 .skills {
   height: 100vh;
 }
 
-.skills h2 {
-  -webkit-text-decoration: underline 5px #FFA818;
-          text-decoration: underline 5px #FFA818;
+.skills h2 span {
+  -webkit-box-shadow: inset 0px -5px 0px 0px #FFA818;
+          box-shadow: inset 0px -5px 0px 0px #FFA818;
 }
 
 h3,
@@ -1240,9 +1228,9 @@ h3,
   height: 100%;
 }
 
-.projects h2 {
-  -webkit-text-decoration: underline 5px #F06000;
-          text-decoration: underline 5px #F06000;
+.projects h2 span {
+  -webkit-box-shadow: inset 0px -5px 0px 0px #F06000;
+          box-shadow: inset 0px -5px 0px 0px #F06000;
 }
 
 .projects h3,
@@ -1331,6 +1319,11 @@ h3,
   display: flex;
 }
 
+.contact h2 span {
+  -webkit-box-shadow: inset 0px -5px 0px 0px #FFA818;
+          box-shadow: inset 0px -5px 0px 0px #FFA818;
+}
+
 .contact-icons-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1347,7 +1340,7 @@ html {
 }
 
 img {
-  min-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
 }
@@ -1368,6 +1361,9 @@ button,
 form,
 a,
 input,
+textarea,
+label,
+fieldset,
 ul,
 li {
   margin: 0;
@@ -1406,6 +1402,53 @@ h1 {
   font-size: 4.5rem;
 }
 
+h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+  font-size: 3.5rem;
+}
+
 .spacer {
   height: 20vh;
+}
+
+.contact-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 25px;
+}
+
+.contact-icons li {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  text-align: center;
+}
+
+.contact-icons li i {
+  font-size: 4rem;
+}
+
+.contact-icons li i:hover {
+  border-bottom: 4px solid #F06000;
+}
+
+.contact-icons li i:active {
+  border-bottom: 4px solid #FFA818;
+}
+
+.contact-icons li i:focus {
+  outline: 1px dotted #FFA818;
 }

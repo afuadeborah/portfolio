@@ -16,3 +16,55 @@ Move out github in skills section
 Make a funciton on hover to show the name of the skills in the project section.
 
 Add span and aria hidden to icons
+
+LinkedIn, direct email, twitter, github, resume, medium
+
+<ul class="contact-icons-container">
+                <li>
+                        
+                    <a href="https://github.com/afuadeborah"
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    tabIndex="0"
+                    aria-hidden="true"
+                    title= "@afuadeborah on Github"
+                    alt="Go to Afua's Github">
+                        <i class="devicons devicons-github_badge"></i>
+                    </a>
+                    
+                    <h5>@afuadeborah</h5>
+
+                </li>
+                <li>
+                    <a href="https://medium.com/@afuafrimpong4"
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    tabIndex="0"
+                    aria-hidden="true"
+                    title= "@afuafrimpong4 on Medium"
+                    alt="Go to Afua's Medium blog">
+
+                        <!-- Icon here -->
+
+                    </a>
+                    <h5>@afuafrimpong4</h5>
+                   
+                </li>
+                <li>
+                    
+                </li>
+                <li>
+                    <a href="https://twitter.com/afuadeborah_"
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    tabIndex="0"
+                    aria-hidden="true"
+                    title="@afuadeborah_ on Twitter"
+                    alt="Go to Afua's Twitter">
+
+                       <!-- Icon here -->
+
+                    </a>
+                    <h5>@afuadeborah_</h5>
+                </li>
+            </ul>

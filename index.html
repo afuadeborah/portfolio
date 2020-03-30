@@ -9,7 +9,8 @@
     <!-- Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-      <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+    <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/813177f008.js" crossorigin="anonymous"></script>
     <!-- Libraries -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Stylesheet  -->
@@ -73,25 +74,85 @@
 
                         <p>Hello World! I'm Afua Deborah, a Front-End Web Developer based out of Toronto.  From choreography on a stage to lines of code on a web page, I love combining the worlds of logic and creative design to make eye-catching, accessible, and user-friendly websites and applications.</p>
 
-                        <p>Technology leads, society follows. The move towards increasing inclusivity and diversity in the industry through representation is of importance to me.</p>
+                        <p><span>Technology leads, society follows.</span> The move towards increasing inclusivity and diversity in the industry through representation is of importance to me.</p>
 
-                        <p>I'm excited to make the leap into an evergreen industry and to continue refining my skills with the right company. Drop me a line and/or your favourite restaurant in Toronto <a href="#contact">below</a>!</p>
+                        <p>I'm excited to make the leap into an evergreen industry and to continue refining my skills with the right company. Drop me a line and/or your favourite restaurant in Toronto in the contact form<a href="#contact" tabindex="0"> below</a>!</p>
+
+                        <p>Or check me out at:</p>
+
+                       <ul class="contact-icons">
+                        <li tabIndex="0">
+                            <a href="https://github.com/afuadeborah"
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            
+                            aria-hidden="true"
+                            title= "@afuadeborah on Github"
+                            alt="Go to Afua's Github">
+                                <i class="devicons devicons-github_badge"></i>
+                            </a>
+                        </li>
+
+                        <li tabIndex="0">
+                            <a href="https://www.linkedin.com/in/meet-afua-frimpong/"
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            aria-hidden="true"
+                            title= "Afua's LinkedIn"
+                            alt="Go to Afua's LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+
+                        <li tabIndex="0">
+                            <a href="https://twitter.com/afuadeborah_"
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            aria-hidden="true"
+                            title="@afuadeborah_ on Twitter"
+                            alt="Go to Afua's Twitter">
+
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+
+                        <li tabIndex="0">
+                            <a href="https://medium.com/@afuafrimpong4"
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            aria-hidden="true"
+                            title="@afuafrimpong4_ on Medium"
+                            alt="Go to Afua's blog on Medium">
+                                <i class="fab fa-medium-m"></i>
+                            </a>
+                        </li>
+
+                        <li tabIndex="0">
+                            <a href="mailto:afuafrimpong4@gmail.com?subject=Getting in Touch with Afua Deborah"
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            aria-hidden="true"
+                            title="Email Afua directly"
+                            alt="Send Afua an email">
+                                <i class="fas fa-at"></i>
+                            </a>
+                        </li>
+                    </ul> 
                 </div>
             </div>
 
             
-
         </div>
             
-        </div>
+
     </section>
 
     <div class="spacer"></div>
 
     <!-- Skills -->
     <section class="skills">
-        <li class="wrapper">
-            <h2 id="scramble-skill">Relevant Skills</h2>
+        <div class="wrapper">
+            <h2 id="scramble-skill"><span>Skills</span></h2>
         
             <div class="skills-container">
                 <ul class="skill-row">
@@ -147,11 +208,6 @@
                     
 
                     <li class="skills-title">
-                        <i class="devicons devicons-github_badge"></i>
-                        <p>Github</p>
-                    </li>
-
-                    <li class="skills-title">
                         <i class="devicons devicons-terminal_badge"></i>
                         <p>Terminal</p>
                     </li>
@@ -171,10 +227,6 @@
                         <p>Accessibility</p>
                     </li>
 
-                    <li class="skills-title">
-                        <i class="material-icons client">group</i>
-                        <p>Customer Service</p>
-                    </li>
     
                     <li class="skills-title">
                         <i class="material-icons collab">group_work</i>
@@ -212,7 +264,7 @@
     <section class="projects" id="projects">
         <div class="wrapper">
 
-            <h2 id="scramble-project">Projects</h2>
+            <h2 id="scramble-project"><span>Projects</span></h2>
 
             <div class="project-container" style="overflow-x: hidden">
                 <!-- In My Feelings -->
@@ -225,7 +277,7 @@
                     <div class="project-text" data-aos="zoom-in-left" data-aos-duration="1500">
                         <h3>In My Feelings</h3>
                         <p>What's got you in your feelings?</p>
-                        <p>A Drake-themed journal and quiz app that selects a Drake album for the user based on input about their mood.</p>
+                        <p>A Drake-themed journal and quiz app that selects a Drake album to play for the user based on input about their mood. Albums were retrieved using the Lastfm.com API.</p>
 
                         <div class="made-with">
                             <h4>Made With</h4>
@@ -463,7 +515,7 @@
                         </div>
 
                         <div class="project-links">
-                            <a href="https://afuadeborah.github.io/afua-frimpong-project-5/"
+                            <a href="https://github.com/afuadeborah/afua-frimpong-project-one"
                             target="_blank" 
                             rel="noopener noreferrer" 
                             tabIndex="0"
@@ -485,79 +537,56 @@
 
     <section class="contact" id="contact">
         <div class="wrapper">
-            <h2>Contact Me</h2>
-            <p>If you have any questions about me or my projects, or would like to (politely)
-                argue about the best albums of the 2010s, contact me below!</p>
+            <h2><span>Contact Me</span></h2>
+            <p>If you have any questions about me or my projects, or would like to (politely) argue about the best albums of the 2010s, contact me below!</p>
 
-                <form
-                action="https://formspree.io/mwkqdqjr"
-                method="POST">
-                <label>
-                  Your email:
-                  <input type="text" name="_replyto">
-                </label>
-                <label>
-                  Your message:
-                  <textarea name="message">
+            <form action="">
+                <fieldset class="personal">
+                    <label for=""></label>
+                    <input type="text" name="" id="" tabindex="0">
 
-                  </textarea>
-                </label>
-              
-                <!-- your other form fields go here -->
-              
-                <button type="submit">Send</button>
-              </form>
+                    <label for=""></label>
+                    <input type="email" name="" id="" tabindex="0">
+
+                </fieldset>
+                <fieldset class="write-message">
+                    <label for=""></label>
+                    <textarea name="" id="" cols="30" rows="10" tabindex="0"></textarea>
+                </fieldset>
+            </form>
+
+                
             
-            <h3>Otherwise contact me at</h3>
-            <ul class="contact-icons-container">
-                <li>
-                        
-                    <a href="https://github.com/afuadeborah"
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    tabIndex="0"
-                    aria-hidden="true"
-                    title= "@afuadeborah on Github"
-                    alt="Go to Afua's Github">
+            <h3>Otherwise, find me at</h3>
+            <ul class="contact-icons">
+                <li tabindex="0">
+                    <a href="https://github.com/afuadeborah">
                         <i class="devicons devicons-github_badge"></i>
                     </a>
-                    
-                    <h5>@afuadeborah</h5>
-
                 </li>
-                <li>
-                    <a href="https://medium.com/@afuafrimpong4"
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    tabIndex="0"
-                    aria-hidden="true"
-                    title= "@afuafrimpong4 on Medium"
-                    alt="Go to Afua's Medium blog">
-
-                        <!-- Icon here -->
-
+                <li tabindex="0">
+                    <a href="">
+                        <i class="fab fa-linkedin"></i>
                     </a>
-                    <h5>@afuafrimpong4</h5>
-                   
                 </li>
-                <li>
-                    
-                </li>
-                <li>
-                    <a href="https://twitter.com/afuadeborah_"
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    tabIndex="0"
-                    aria-hidden="true"
-                    title="@afuadeborah_ on Twitter"
-                    alt="Go to Afua's Twitter">
-
-                       <!-- Icon here -->
-
+                <li tabindex="0">
+                    <a href="">
+                        <i class="fab fa-twitter"></i>
                     </a>
-                    <h5>@afuadeborah_</h5>
+                </li>
+                <li tabindex="0">
+                    <a href="">
+                        <i class="fab fa-medium-m"></i>
+                    </a>
+                </li>
+                <li tabindex="0">
+                    <a href="">
+                        <i class="fas fa-at"></i>
+                    </a>
                 </li>
             </ul>
+
+            
 
         </div>
     </section>
@@ -579,7 +608,7 @@
 
 
 
-
+<!-- Added Scripts -->
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/scramble.js"></script>

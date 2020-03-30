@@ -15,7 +15,7 @@ html {
 }
 
 img {
-    min-width: 100%;
+    width: 100%;
     height: auto;
     display: block;
 }
@@ -36,6 +36,9 @@ button,
 form,
 a,
 input,
+textarea,
+label,
+fieldset,
 ul,
 li {
     margin: 0;
@@ -75,9 +78,46 @@ h1 {
     @include font-size(45);
 }
 
+h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    @include font-size(35);
+}
+
 // Divider
 .spacer {
     height: 20vh;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+
+    li {
+        flex-basis: 20%;
+        text-align: center;
+
+        i {
+            font-size: 4rem;
+
+            &:hover {
+                border-bottom: 4px solid $orange;
+            }
+
+            &:active {
+                border-bottom: 4px solid $yellow;
+            }
+
+            &:focus {
+               outline: 1px dotted $yellow; 
+            }
+
+        }
+
+    }
 }
 
 

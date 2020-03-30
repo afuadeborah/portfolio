@@ -12,10 +12,9 @@
         display: grid;
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: repeat(8, 1fr);
-        // margin: 0 auto 6% auto;
 
             .name {
-                box-shadow: inset 0px -6px 0px 0px #FFA818;
+                box-shadow: inset 0px -6px 0px 0px $yellow;
             }
         }
 }
