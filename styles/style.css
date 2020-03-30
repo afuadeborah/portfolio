@@ -1280,6 +1280,12 @@ h3,
           justify-content: center;
 }
 
+.mockup {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 .project-text {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
