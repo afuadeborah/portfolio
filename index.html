@@ -76,7 +76,7 @@
 
                         <p><span>Technology leads, society follows.</span> The move towards increasing inclusivity and diversity in the industry through representation is of importance to me.</p>
 
-                        <p>I'm excited to make the leap into an evergreen industry and to continue refining my skills with the right company. Drop me a line and/or your favourite restaurant in Toronto in the contact form<a href="#contact" tabindex="0"> below</a>!</p>
+                        <p>I'm excited to make the leap into an evergreen industry and to continue refining my skills with the right company. Drop me a line and/or your favourite restaurant in Toronto in the contact form <a href="#contact" tabindex="0">below</a>!</p>
 
                         <p>Or check me out at:</p>
 
@@ -137,7 +137,7 @@
                                 <i class="fas fa-at"></i>
                             </a>
                         </li>
-                    </ul> 
+                        </ul> 
                 </div>
             </div>
 
@@ -536,59 +536,121 @@
     <div class="spacer"></div>
 
     <section class="contact" id="contact">
+
         <div class="wrapper">
             <h2><span>Contact Me</span></h2>
             <p>If you have any questions about me or my projects, or would like to (politely) argue about the best albums of the 2010s, contact me below!</p>
 
-            <form action="">
+            <form action="http://www.focuspocus.io/magic/9ce4fe3a3521e1197789a8a125ce8e5b" method="POST" enctype="multipart/form-data" name="contact-form">
+                
+
                 <fieldset class="personal">
-                    <label for=""></label>
-                    <input type="text" name="" id="" tabindex="0">
+                    <label for="name"></label>
+                    <input 
+                    type="text" 
+                    name="name" id="name"
+                    placeholder="Your name" 
+                    tabindex="0">
 
-                    <label for=""></label>
-                    <input type="email" name="" id="" tabindex="0">
+                    <label for="email"></label>
+                    <input 
+                    type="email" 
+                    name="email" id="email"
+                    placeholder="Your email"
+                    tabindex="0">
 
                 </fieldset>
+
                 <fieldset class="write-message">
-                    <label for=""></label>
-                    <textarea name="" id="" cols="30" rows="10" tabindex="0"></textarea>
+                    <label for="message"></label>
+                    <textarea 
+                    name="message" 
+                    id="message" 
+                    placeholder="IGOR was one of the best albums of 2019."
+                    required
+                    rows="10"
+                    cols="50"
+                    wrap="hard" 
+                    tabindex="0">
+                </textarea>
                 </fieldset>
+
+                <fieldset class="attach">
+                    <label for="attachment">Attachments (Optional):</label>
+                    <input type="file" name="attachment" id="attachment"/>    
+                </fieldset>
+
+                <button type="submit" name="submit">Send</button>
+
             </form>
 
                 
-            
-            <h3>Otherwise, find me at</h3>
-            <ul class="contact-icons">
-                <li tabindex="0">
-                    <a href="https://github.com/afuadeborah">
-                        <i class="devicons devicons-github_badge"></i>
-                    </a>
-                </li>
-                <li tabindex="0">
-                    <a href="">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
-                <li tabindex="0">
-                    <a href="">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li tabindex="0">
-                    <a href="">
-                        <i class="fab fa-medium-m"></i>
-                    </a>
-                </li>
-                <li tabindex="0">
-                    <a href="">
-                        <i class="fas fa-at"></i>
-                    </a>
-                </li>
-            </ul>
+            <div class="contact-icon-container">
+                   
+                <h3>Catch me on</h3>
+                <ul class="contact-icons">
+                    <li tabIndex="0">
+                        <a href="https://github.com/afuadeborah"
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        
+                        aria-hidden="true"
+                        title= "@afuadeborah on Github"
+                        alt="Go to Afua's Github">
+                            <i class="devicons devicons-github_badge"></i>
+                        </a>
+                    </li>
 
-            
+                    <li tabIndex="0">
+                        <a href="https://www.linkedin.com/in/meet-afua-frimpong/"
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        aria-hidden="true"
+                        title= "Afua's LinkedIn"
+                        alt="Go to Afua's LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
 
+                    <li tabIndex="0">
+                        <a href="https://twitter.com/afuadeborah_"
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        aria-hidden="true"
+                        title="@afuadeborah_ on Twitter"
+                        alt="Go to Afua's Twitter">
+
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+
+                    <li tabIndex="0">
+                        <a href="https://medium.com/@afuafrimpong4"
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        aria-hidden="true"
+                        title="@afuafrimpong4_ on Medium"
+                        alt="Go to Afua's blog on Medium">
+                            <i class="fab fa-medium-m"></i>
+                        </a>
+                    </li>
+
+                    <li tabIndex="0">
+                        <a href="mailto:afuafrimpong4@gmail.com?subject=Getting in Touch with Afua Deborah"
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        aria-hidden="true"
+                        title="Email Afua directly"
+                        alt="Send Afua an email">
+                            <i class="fas fa-at"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div> 
+            
         </div>
+
     </section>
 
 
