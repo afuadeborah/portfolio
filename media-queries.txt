@@ -1,4 +1,5 @@
 - Fix ghostspace on sections with aos
+- Put logo design next to form
 
 1000 px
 - Adjust text and photo
@@ -18,6 +19,8 @@ Make a funciton on hover to show the name of the skills in the project section.
 Add span and aria hidden to icons
 
 LinkedIn, direct email, twitter, github, resume, medium
+
+Might not need material icons
 
 // Media Query at 830 for horizontal scroll
 // Media Query at 530 for h1

@@ -155,7 +155,7 @@
             <h2 id="scramble-skill"><span>Skills</span></h2>
         
             <div class="skills-container">
-                <ul class="skill-row">
+                <!-- <ul class="skill-row"> -->
                     <li class="skills-title">
                         <i class="devicons devicons devicons-html5"></i>
                         <p>HTML5</p>
@@ -175,9 +175,9 @@
                         <i class="devicons devicons-javascript_badge"></i>
                         <p>JavaScript + ES6</p>
                     </li>
-                </ul>
+                <!-- </ul> -->
 
-                <ul class="skill-row">
+                <!-- <ul class="skill-row"> -->
                     <li class="skills-title">
                         <i class="devicons devicons-jquery"></i>
                         <p>jQuery</p>
@@ -197,9 +197,9 @@
                         <i class="devicons devicons-firebase"></i>
                         <p>Firebase</p>
                     </li>
-                </ul>
+                <!-- </ul> -->
             
-                <ul class="skill-row">
+                <!-- <ul class="skill-row"> -->
                 
                     <li class="skills-title">
                         <i class="devicons devicons-git"></i>
@@ -219,9 +219,9 @@
                         <br>
                         Design</p>
                     </li>
-                </ul>
+                <!-- </ul> -->
 
-                <ul class="skill-row">
+                <!-- <ul class="skill-row"> -->
                     <li class="skills-title">
                         <i class="material-icons">accessibility_new</i>
                         <p>Accessibility</p>
@@ -238,7 +238,7 @@
                         <p>Remote Work</p>
                     </li>
 
-                </ul>
+                <!-- </ul> -->
             </div>
                 <!-- <div class="skill-row">
 
@@ -545,38 +545,25 @@
                 
 
                 <fieldset class="personal">
-                    <label for="name"></label>
-                    <input 
-                    type="text" 
-                    name="name" id="name"
-                    placeholder="Your name" 
-                    tabindex="0">
+                    <label class="visually-hidden" for="name"></label>
+                    <input type="text" name="name" id="name" placeholder="Your name" tabindex="0">
 
-                    <label for="email"></label>
-                    <input 
-                    type="email" 
-                    name="email" id="email"
-                    placeholder="Your email"
-                    tabindex="0">
+                    <label class="visually-hidden" for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="Your email" tabindex="0">
 
                 </fieldset>
 
                 <fieldset class="write-message">
-                    <label for="message"></label>
-                    <textarea 
-                    name="message" 
-                    id="message" 
-                    placeholder="IGOR was one of the best albums of 2019."
-                    required
-                    rows="10"
-                    cols="50"
-                    wrap="hard" 
-                    tabindex="0">
-                </textarea>
+                    <label class="visually-hidden"
+                    for="message"></label>
+
+                    <textarea name="message" id="message" placeholder="IGOR was one of the best albums of 2019." required rows="10" cols="50" wrap="hard" tabindex="0">
+                    </textarea>
                 </fieldset>
 
                 <fieldset class="attach">
-                    <label for="attachment">Attachments (Optional):</label>
+                    <label for="visually-hidden attachment">Attachments (Optional):</label>
+
                     <input type="file" name="attachment" id="attachment"/>    
                 </fieldset>
 

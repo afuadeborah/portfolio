@@ -40,43 +40,5 @@ form {
     }
 }
 
-// Data Entry
-input,
-textarea {
-    
-    margin: 10px 0;
-    
-    &::placeholder {
-      letter-spacing: 1.1px;
-      font-size: 1.5rem;
-    }
-
-}
-
-.personal {
-    display: flex;
-    justify-content: space-between;
-
-    input[type=text] {
-        margin-right: 10px;
-    }
-}
-
-.personal,
-textarea {
-    width: 100%;
-}
-
-button,
-.attach,
-.personal {
-    
-    margin: 20px 0;
-}
-
-.write-message {
-    margin-bottom: 20px;
-}
-
 
 
