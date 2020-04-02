@@ -75,7 +75,35 @@
 
         }
 
-        
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+
+    li {
+        flex-basis: 20%;
+        text-align: center;
+
+        i {
+            font-size: 4rem;
+
+            &:hover {
+                border-bottom: 4px solid $orange;
+            }
+
+            &:active {
+                border-bottom: 4px solid $yellow;
+            }
+
+            &:focus {
+               outline: 1px dotted $yellow; 
+            }
+
+        }
+
+    }
 }
 
 
@@ -111,6 +139,7 @@ h3,
 
         i {
             font-size: 6.5rem;
+            text-shadow: 3px 3px 0 $yellow;
 
             &:hover {
                 transform: scale(1.2);
@@ -126,4 +155,3 @@ h3,
 
 
     
-// Media Query 1000px for text beside picture change font size

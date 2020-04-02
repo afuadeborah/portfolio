@@ -1001,31 +1001,14 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.welcome .wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[8];
-      grid-template-columns: repeat(8, 1fr);
-  -ms-grid-rows: (1fr)[8];
-      grid-template-rows: repeat(8, 1fr);
-}
-
-.welcome .wrapper .name {
+.welcome .name {
   -webkit-box-shadow: inset 0px -6px 0px 0px #FFA818;
           box-shadow: inset 0px -6px 0px 0px #FFA818;
-}
-
-.welcome-name {
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 7;
-  grid-area: 4 / 2 / 7 / 9;
 }
 
 .arrow {
@@ -1124,6 +1107,38 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   font-weight: bold;
 }
 
+.contact-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 25px;
+}
+
+.contact-icons li {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  text-align: center;
+}
+
+.contact-icons li i {
+  font-size: 4rem;
+}
+
+.contact-icons li i:hover {
+  border-bottom: 4px solid #F06000;
+}
+
+.contact-icons li i:active {
+  border-bottom: 4px solid #FFA818;
+}
+
+.contact-icons li i:focus {
+  outline: 1px dotted #FFA818;
+}
+
 .skills {
   height: 100vh;
 }
@@ -1153,6 +1168,7 @@ h3,
 
 .skills-title i {
   font-size: 6.5rem;
+  text-shadow: 3px 3px 0 #FFA818;
 }
 
 .skills-title i:hover {
@@ -1264,12 +1280,12 @@ h3,
   height: 100vh;
 }
 
-.contact h2 span {
+.contact h2 span,
+.contact a:hover {
   -webkit-box-shadow: inset 0px -5px 0px 0px #FFA818;
           box-shadow: inset 0px -5px 0px 0px #FFA818;
 }
 
-.contact-icons-container,
 .form-logo-container,
 form {
   display: -webkit-box;
@@ -1278,11 +1294,6 @@ form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.contact-icons-container {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 form {
@@ -1317,18 +1328,29 @@ form button {
   padding: 5px 30px;
   background-color: #FFA818;
   border-radius: 3px;
+  margin-top: 10px;
 }
 
 .form-logo-container {
   margin: 50px;
 }
 
-.form-logo-container .logo {
+.form-logo-container .form-text {
   width: 50%;
   margin-left: 30px;
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
+}
+
+.form-logo-container .form-text br {
+  margin: 10px;
+}
+
+.form-logo-container .form-text a {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
 }
 
 html {
@@ -1415,36 +1437,4 @@ h2 {
 
 .spacer {
   height: 20vh;
-}
-
-.contact-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-top: 25px;
-}
-
-.contact-icons li {
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
-  text-align: center;
-}
-
-.contact-icons li i {
-  font-size: 4rem;
-}
-
-.contact-icons li i:hover {
-  border-bottom: 4px solid #F06000;
-}
-
-.contact-icons li i:active {
-  border-bottom: 4px solid #FFA818;
-}
-
-.contact-icons li i:focus {
-  outline: 1px dotted #FFA818;
 }

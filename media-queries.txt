@@ -24,3 +24,8 @@ Go in and get rid of everything commented out
 
 // Media Query at 830 for horizontal scroll
 // Media Query at 530 for h1
+
+// Media Query 1000px for text beside picture change font size
+
+// Media Query at 830 for horizontal scroll
+// Media Query at 530 for h1
