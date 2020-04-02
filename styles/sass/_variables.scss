@@ -1,11 +1,13 @@
 // Fonts
 
-$sen-font: "Sen", sans-serif;
+$body-font: "Sen", sans-serif;
 
 @mixin font-size($size){
     font-size: ($size/10) * 1rem;
 }
 
+
+// Allows cross-browser rendering of underline
 @mixin underline($colour){
     box-shadow: inset 0px -5px 0px 0px $colour;
 }
@@ -19,6 +21,6 @@ $grey: #C4C4C4;
 
 $yellow:  #FFA818;
 $orange: #F06000;
-$green: #CCF83C;
+// $green: #CCF83C;
 
 

@@ -12,15 +12,15 @@
     - Stack projects
 
 
-Move out github in skills section
-
-Make a funciton on hover to show the name of the skills in the project section.
+Make a function on hover to show the name of the skills in the project section.
 
 Add span and aria hidden to icons
 
 LinkedIn, direct email, twitter, github, resume, medium
 
 Might not need material icons
+
+Go in and get rid of everything commented out
 
 // Media Query at 830 for horizontal scroll
 // Media Query at 530 for h1

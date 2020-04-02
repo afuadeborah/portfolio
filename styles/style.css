@@ -1152,7 +1152,7 @@ h3,
 }
 
 .skills-title i {
-  font-size: 5.5rem;
+  font-size: 6.5rem;
 }
 
 .skills-title i:hover {
@@ -1269,40 +1269,44 @@ h3,
           box-shadow: inset 0px -5px 0px 0px #FFA818;
 }
 
-.contact-icons-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
+.contact-icons-container,
+.form-logo-container,
 form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-icons-container {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+form {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 70%;
+  width: calc(50% - 30px);
 }
 
-form fieldset {
+form input,
+form textarea {
   width: 100%;
+  padding: 10px;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: 2px solid #FFA818;
 }
 
 form input {
   height: 40px;
-  width: calc(50% - 10px);
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  margin-bottom: 20px;
 }
 
 form textarea {
@@ -1310,10 +1314,21 @@ form textarea {
 }
 
 form button {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  min-width: 100%;
+  padding: 5px 30px;
+  background-color: #FFA818;
+  border-radius: 3px;
+}
+
+.form-logo-container {
+  margin: 50px;
+}
+
+.form-logo-container .logo {
+  width: 50%;
+  margin-left: 30px;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
 }
 
 html {
@@ -1344,7 +1359,6 @@ a,
 input,
 textarea,
 label,
-fieldset,
 ul,
 li {
   margin: 0;

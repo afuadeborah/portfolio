@@ -40,6 +40,7 @@
 
     <section class="welcome">
         <div class="wrapper">
+            
             <div class="welcome-name">
                 <h1>
                     <span class="name" id="messenger">Afua Deborah</span>
@@ -60,7 +61,7 @@
         <div class="wrapper">
             
             <div class="about-name">
-                <h2 id="scramble-name">About Me</h2> 
+                <h2>About Me</h2> 
                 <p>/ahFOO-ah dEb-ruh/</p>
             </div>  
 
@@ -152,10 +153,11 @@
     <!-- Skills -->
     <section class="skills">
         <div class="wrapper">
-            <h2 id="scramble-skill"><span>Skills</span></h2>
+
+            <h2><span>Skills</span></h2>
         
             <div class="skills-container">
-                <!-- <ul class="skill-row"> -->
+
                     <li class="skills-title">
                         <i class="devicons devicons devicons-html5"></i>
                         <p>HTML5</p>
@@ -175,9 +177,7 @@
                         <i class="devicons devicons-javascript_badge"></i>
                         <p>JavaScript + ES6</p>
                     </li>
-                <!-- </ul> -->
 
-                <!-- <ul class="skill-row"> -->
                     <li class="skills-title">
                         <i class="devicons devicons-jquery"></i>
                         <p>jQuery</p>
@@ -197,9 +197,6 @@
                         <i class="devicons devicons-firebase"></i>
                         <p>Firebase</p>
                     </li>
-                <!-- </ul> -->
-            
-                <!-- <ul class="skill-row"> -->
                 
                     <li class="skills-title">
                         <i class="devicons devicons-git"></i>
@@ -212,16 +209,13 @@
                         <p>Terminal</p>
                     </li>
         
-
                     <li class="skills-title">
                         <i class="devicons devicons-responsive"></i>
                         <p>Responsive
                         <br>
                         Design</p>
                     </li>
-                <!-- </ul> -->
 
-                <!-- <ul class="skill-row"> -->
                     <li class="skills-title">
                         <i class="material-icons">accessibility_new</i>
                         <p>Accessibility</p>
@@ -238,23 +232,8 @@
                         <p>Remote Work</p>
                     </li>
 
-                <!-- </ul> -->
             </div>
-                <!-- <div class="skill-row">
 
-                    <div class="skills-title">
-                        <i class="material-icons logic">extension</i>
-                        <p>Problem Solving</p>
-                    </div>
-
-                    <div class="skills-title">
-                        <i class="material-icons communicate">contact_support</i>
-                        <p>Communication & Inquiry</p>
-                    </div>
-
-                </div> -->
-                
-        <!-- Add effects -->
         </div>
     </section>
 
@@ -264,7 +243,7 @@
     <section class="projects" id="projects">
         <div class="wrapper">
 
-            <h2 id="scramble-project"><span>Projects</span></h2>
+            <h2><span>Projects</span></h2>
 
             <div class="project-container" style="overflow-x: hidden">
                 <!-- In My Feelings -->
@@ -530,51 +509,52 @@
             </div>
 
         </div>
-
     </section>
 
     <div class="spacer"></div>
 
     <section class="contact" id="contact">
-
         <div class="wrapper">
-            <h2><span>Contact Me</span></h2>
-            <p>If you have any questions about me or my projects, or would like to (politely) argue about the best albums of the 2010s, contact me below!</p>
 
-            <form action="http://www.focuspocus.io/magic/9ce4fe3a3521e1197789a8a125ce8e5b" method="POST" enctype="multipart/form-data" name="contact-form">
-                
+            <div class="contact-text">
 
-                <fieldset class="personal">
+                <h2><span>Contact Me</span></h2>
+                <p>If you have any questions about me or my projects, or would like to (politely) argue about the best albums of the 2010s, contact me below.</p>
+                <p>I'm also available just to chat, grab a coffee or pick your brain about tech! Thanks for stopping by! </p>
+
+            </div>
+
+            <div class="form-logo-container">
+
+                <form action="http://www.focuspocus.io/magic/9ce4fe3a3521e1197789a8a125ce8e5b" method="POST" enctype="multipart/form-data" name="contact-form">
+                    
                     <label class="visually-hidden" for="name"></label>
-                    <input type="text" name="name" id="name" placeholder="Your name" tabindex="0">
+                    <input type="text" name="name" id="name" placeholder="Your name" required tabindex="0">
 
                     <label class="visually-hidden" for="email"></label>
-                    <input type="email" name="email" id="email" placeholder="Your email" tabindex="0">
+                    <input type="email" name="email" id="email" placeholder="Your email" required tabindex="0">
 
-                </fieldset>
-
-                <fieldset class="write-message">
                     <label class="visually-hidden"
                     for="message"></label>
-
-                    <textarea name="message" id="message" placeholder="IGOR was one of the best albums of 2019." required rows="10" cols="50" wrap="hard" tabindex="0">
+                    <textarea name="message" id="message" placeholder="IGOR was one of the best albums of 2019." required rows="10" cols="50" wrap="hard" required tabindex="0">
                     </textarea>
-                </fieldset>
 
-                <fieldset class="attach">
-                    <label for="visually-hidden attachment">Attachments (Optional):</label>
-
+                    <label for="visually-hidden attachment"></label>
                     <input type="file" name="attachment" id="attachment"/>    
-                </fieldset>
 
-                <button type="submit" name="submit">Send</button>
+                    <button type="submit" name="submit">Send</button>
 
-            </form>
+                </form>
+                <div class="logo">
+                    <img src="./assets/adc-logo.png" alt="the letters AFDB in white on a black background with a gold border">
+                </div>
+
+            </div>
 
                 
             <div class="contact-icon-container">
                    
-                <h3>Catch me on</h3>
+                <h3>Or catch me on</h3>
                 <ul class="contact-icons">
                     <li tabIndex="0">
                         <a href="https://github.com/afuadeborah"
@@ -637,7 +617,6 @@
             </div> 
             
         </div>
-
     </section>
 
 
