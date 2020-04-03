@@ -62,6 +62,7 @@ body {
     color: $white;
     line-height: 1.6;
     letter-spacing: 1.5px;
+    overflow-x: hidden;
 }
 
 h1,
@@ -96,13 +97,22 @@ h2 {
 
 // Media Queries
 @include mobile-tablet {
+
+// Navigation
     .top-nav {
         display: none;
 
     }
-    
+
     .hamburger {
         display: block;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
     }
 
 }

@@ -10,6 +10,7 @@
     - Stack photo and text in About Me
     - Make Skills 3 x 3
     - Stack projects
+    - a link in contact section causes horizontal scroll
 
 
 Make a function on hover to show the name of the skills in the project section.

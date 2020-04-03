@@ -1,4 +1,4 @@
-// Styling
+// Top Navigation
 
 .top-nav {
     display: flex;
@@ -8,10 +8,6 @@
 
         li {
             margin: 15px;
-
-            // &:last-of-type {
-            //     display: none;
-            // }
 
             &:hover {
                 border-bottom: 4px solid $yellow;
@@ -26,17 +22,112 @@
             }
        
         }
+
+        a {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
 }
 
-.top-nav a {
-
-    text-transform: uppercase;
-    letter-spacing: 3px;
-
-}
 
 
 // Hamburger Menu
+// Special credits to Erik Terwan's Codepen for the Hamburger Menu https://codepen.io/erikterwan/pen/EVzeRP?editors=1100
+
 .hamburger {
     display: none;
+    // position: relative;
+    // top: 50px;
+    // left: 50px;
+    text-align: right;
+    // padding-right: 50px;
+    
+    z-index: 1;
+    
+    -webkit-user-select: none;
+    user-select: none;
+
+  
+    // Menu Links Styling
+    a  {
+        @include font-size(40);
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 3px;
+    }
+
+    li {
+        padding: 20px 0;
+
+        &:hover {
+            transition: color 0.3s ease;
+            color: $yellow;
+        }
+    }
+
+    // Input Checkbox 
+    input {
+        display: block;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: -10px;
+        right: 65px;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+
+        -webkit-touch-callout: none;
+
+            &:checked ~ span {
+                opacity: 1;
+                transform: rotate(45deg) translate(0px, 0px);
+                background: $white;
+            }
+
+            &:checked ~ span:nth-last-child(3)
+            {
+              opacity: 0;
+              transform: rotate(0deg) scale(0.2, 0.2);
+            }
+
+            &:checked ~ span:nth-last-child(2)
+            {
+              opacity: 1;
+              transform: rotate(-45deg) translate(0px, -2px);
+            }
+    }
+    //In order to trigger the menu to open and close based on the :checked attribute
+
+    span {
+        display: block;
+        background: $white;
+        height: 4px;
+        width: 45px;
+        margin-bottom: 10px;
+        position: relative;
+        right: -95px;
+
+        z-index: 1;
+
+        // Animate Spans on Click
+        transform-origin: 4px 0px;
+  
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+        background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+        opacity 0.55s ease;
+
+            &:first-child {
+                transform-origin: 0% 0%;
+            }
+
+            &:last-child {
+                transform-origin: 0% 100%;
+            }
+    }
+   
+    
+
+
+
 }
