@@ -1019,7 +1019,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   height: 50px;
   position: absolute;
   top: -10px;
-  right: 65px;
+  right: 5px;
   cursor: pointer;
   opacity: 0;
   z-index: 2;
@@ -1052,7 +1052,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   width: 45px;
   margin-bottom: 10px;
   position: relative;
-  right: -95px;
+  right: -75%;
   z-index: 1;
   -webkit-transform-origin: 4px 0px;
           transform-origin: 4px 0px;
