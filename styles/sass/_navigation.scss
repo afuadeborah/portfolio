@@ -1,7 +1,5 @@
 // Styling
 
-
-
 .top-nav {
     display: flex;
     justify-content: flex-end;
@@ -11,9 +9,9 @@
         li {
             margin: 15px;
 
-            &:last-of-type {
-                display: none;
-            }
+            // &:last-of-type {
+            //     display: none;
+            // }
 
             &:hover {
                 border-bottom: 4px solid $yellow;
@@ -35,4 +33,10 @@
     text-transform: uppercase;
     letter-spacing: 3px;
 
+}
+
+
+// Hamburger Menu
+.hamburger {
+    display: none;
 }

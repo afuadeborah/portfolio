@@ -7,17 +7,15 @@
     }
 }
 
-.form-logo-container, 
+.form-container, 
 form {
     display: flex;
     align-items: center;
 }
 
-
-
 form {
     flex-direction: column;
-    width: calc(50% - 30px);
+    width: calc(50% - 50px);
 
     input,
     textarea {
@@ -43,7 +41,7 @@ form {
     }
 
     button {
-        padding: 5px 30px;
+        padding: 8px 30px;
         background-color: $yellow;
         border-radius: 3px;
         margin-top: 10px;
@@ -52,12 +50,12 @@ form {
 
 }
 
-.form-logo-container {
-    margin: 50px;
+.form-container {
+    margin: 50px 0;
 
     .form-text {
         width: 50%;
-        margin-left: 30px;
+        margin-left: 50px;
         align-self: stretch;
 
         br {
@@ -73,6 +71,10 @@ form {
 
     }
 }
+
+
+
+
 
 
 

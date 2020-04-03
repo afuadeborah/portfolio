@@ -139,7 +139,8 @@ h3,
 
         i {
             font-size: 6.5rem;
-            text-shadow: 3px 3px 0 $yellow;
+            color: $yellow;
+            text-shadow: 3px 3px 0 $orange;
 
             &:hover {
                 transform: scale(1.2);
@@ -151,7 +152,3 @@ h3,
             font-size: 1.5rem;
         }
 }
-
-
-
-    

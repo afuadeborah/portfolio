@@ -18,6 +18,9 @@
 .arrow {
     @include font-size(55);
     cursor: pointer;
+    position: absolute;
+    left: 50%;
+    right: 50%;
     
     &:active {
         border-bottom: 4px solid $orange;

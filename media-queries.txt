@@ -29,3 +29,7 @@ Go in and get rid of everything commented out
 
 // Media Query at 830 for horizontal scroll
 // Media Query at 530 for h1
+
+<!-- aria-hidden="true" -->
+<!-- <span class="sr-only">Go to Tasty on Instagram</span> -->
+<!-- put on each icon -->

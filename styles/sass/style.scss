@@ -9,6 +9,7 @@
 @import 'contact';
 
 
+
 // Default Styling & Stripping 
 html {
     font-size: 62.5%;
@@ -79,11 +80,11 @@ h1 {
 }
 
 h2 {
+    @include font-size(35);
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
-    @include font-size(35);
 }
 
 
@@ -93,15 +94,15 @@ h2 {
 }
 
 
+// Media Queries
+@include mobile-tablet {
+    .top-nav {
+        display: none;
 
+    }
+    
+    .hamburger {
+        display: block;
+    }
 
-
-
-
-
-
-
-
-
-
-
+}

@@ -969,10 +969,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   margin: 15px;
 }
 
-.top-nav li:last-of-type {
-  display: none;
-}
-
 .top-nav li:hover {
   border-bottom: 4px solid #FFA818;
 }
@@ -988,6 +984,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .top-nav a {
   text-transform: uppercase;
   letter-spacing: 3px;
+}
+
+.hamburger {
+  display: none;
 }
 
 .welcome {
@@ -1014,6 +1014,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .arrow {
   font-size: 5.5rem;
   cursor: pointer;
+  position: absolute;
+  left: 50%;
+  right: 50%;
 }
 
 .arrow:active {
@@ -1168,7 +1171,8 @@ h3,
 
 .skills-title i {
   font-size: 6.5rem;
-  text-shadow: 3px 3px 0 #FFA818;
+  color: #FFA818;
+  text-shadow: 3px 3px 0 #F06000;
 }
 
 .skills-title i:hover {
@@ -1286,7 +1290,7 @@ h3,
           box-shadow: inset 0px -5px 0px 0px #FFA818;
 }
 
-.form-logo-container,
+.form-container,
 form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1301,7 +1305,7 @@ form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: calc(50% - 30px);
+  width: calc(50% - 50px);
 }
 
 form input,
@@ -1325,29 +1329,29 @@ form textarea {
 }
 
 form button {
-  padding: 5px 30px;
+  padding: 8px 30px;
   background-color: #FFA818;
   border-radius: 3px;
   margin-top: 10px;
 }
 
-.form-logo-container {
-  margin: 50px;
+.form-container {
+  margin: 50px 0;
 }
 
-.form-logo-container .form-text {
+.form-container .form-text {
   width: 50%;
-  margin-left: 30px;
+  margin-left: 50px;
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
 }
 
-.form-logo-container .form-text br {
+.form-container .form-text br {
   margin: 10px;
 }
 
-.form-logo-container .form-text a {
+.form-container .form-text a {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 3px;
@@ -1421,6 +1425,7 @@ h1 {
 }
 
 h2 {
+  font-size: 3.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1432,9 +1437,17 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 10px;
-  font-size: 3.5rem;
 }
 
 .spacer {
   height: 20vh;
+}
+
+@media (max-width: 767px) {
+  .top-nav {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
 }
