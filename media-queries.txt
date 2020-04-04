@@ -1,5 +1,3 @@
-- Fix ghostspace on sections with aos
-- Put logo design next to form
 
 1000 px
 - Adjust text and photo
@@ -7,10 +5,10 @@
 
 768px
     - Fix size of spacer
-    - Stack photo and text in About Me
-    - Make Skills 3 x 3
     - Stack projects
     - a link in contact section causes horizontal scroll
+    - column reverse every other project
+    - crop mockup photos
 
 
 Make a function on hover to show the name of the skills in the project section.

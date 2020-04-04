@@ -97,7 +97,10 @@ h2 {
 
 // Media Queries
 @include mobile-tablet {
-
+// Standard 
+    p {
+        @include font-size(17.5);
+    }
 // Navigation
     .top-nav {
         display: none;
@@ -113,6 +116,77 @@ h2 {
         z-index: 1;
         -webkit-user-select: none;
         user-select: none;
+    }
+
+// About Me
+    .about-name {
+        align-items: flex-start;
+    }
+
+    .about-me-container {
+        flex-direction: column;
+        align-items: center;
+
+
+        .about-me {
+            align-items: flex-start;
+        }
+
+        .about-pic {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .about-text {
+            width: 100%;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .contact-icons {
+            li:last-of-type {
+                display: none;
+
+                i {
+                    @include font-size(35);
+                }
+            }
+        }
+
+    }
+
+// Projects
+    .project {
+        flex-direction: column;
+
+        .mockup,
+        .project-text {
+            width: 100%;
+        }
+    }
+
+    .project-text:nth-child(1),
+    .mockup:nth-child(1),
+    .project-text:nth-child(2),
+    .mockup:nth-child(2) {
+        margin: 0 auto;
+        
+    }
+
+// Contact
+    .form-container {
+        flex-direction: column-reverse;
+
+        form,
+        .form-text {
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .form-text {
+            margin-bottom: 50px;
+        }
     }
 
 }

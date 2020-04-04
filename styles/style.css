@@ -1464,7 +1464,6 @@ form button {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 3px;
-  display: none;
 }
 
 html {
@@ -1555,6 +1554,9 @@ h2 {
 }
 
 @media (max-width: 767px) {
+  p {
+    font-size: 1.75rem;
+  }
   .top-nav {
     display: none;
   }
@@ -1568,5 +1570,70 @@ h2 {
     -moz-user-select: none;
      -ms-user-select: none;
          user-select: none;
+  }
+  .about-name {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .about-me-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-me-container .about-me {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .about-me-container .about-pic {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .about-me-container .about-text {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .about-me-container .contact-icons li:last-of-type {
+    display: none;
+  }
+  .about-me-container .contact-icons li:last-of-type i {
+    font-size: 3.5rem;
+  }
+  .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .project .mockup,
+  .project .project-text {
+    width: 100%;
+  }
+  .project-text:nth-child(1),
+  .mockup:nth-child(1),
+  .project-text:nth-child(2),
+  .mockup:nth-child(2) {
+    margin: 0 auto;
+  }
+  .form-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .form-container form,
+  .form-container .form-text {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .form-container .form-text {
+    margin-bottom: 50px;
   }
 }
