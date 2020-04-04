@@ -1,23 +1,7 @@
 const app = {};
 
 
-// app.scrollDown = () => {
-//     $('#scroll').click(function() {
-//         $('html, body').animate({
-//             scrollTop: $("#about").offset().top
-//         }, 2000);
-
-//     });
-// }
-
-// function(e) {
-//     $('html, body').animate({
-//       scrollTop: $(window).height()
-//     }, 1200);
-//   }
-
-
-// Navigation Menu
+// Hamburger Menu
 app.menuSlide = () => {
     const menuLinks = $('#ham');
     const checkbox = $('#ham-check');
@@ -28,6 +12,7 @@ app.menuSlide = () => {
     })    
 }
 
+// Arrow to Display About Me
 app.arrowSlide = () => {
     const arrow = $('.arrow');
     arrow.on('click', function(){

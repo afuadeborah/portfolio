@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
     <!-- Icons -->
@@ -21,67 +25,65 @@
     <header>
         <div class="wrapper">
         <nav>
-                <ul class="top-nav">
-                    <li tabindex="0">
-                        <a href="#home" >Home</a>
+            <ul class="top-nav">
+                <li tabindex="0">
+                    <a href="#home" >Home</a>
+                </li>
+                <li tabindex="0">
+                    <a href="#about" >About</a>
+                </li>
+                <li tabindex="0">
+                    <a href="#projects" >Projects</a>
+                </li>
+                <li tabindex="0">
+                    <a href="#contact" >Contact</a>
+                </li>
+            </ul>
+            
+            <div tabindex="0" class="hamburger ">
+
+                <input type="checkbox" name="hamburger" id="ham-check">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <ul class="hamburger-menu" id="ham">
+                    <li id="ham-slide">
+                        <a href="#home">Home</a>
                     </li>
-                    <li tabindex="0">
-                        <a href="#about" >About</a>
+                    <li id="ham-slide">
+                        <a href="#about">About</a>
                     </li>
-                    <li tabindex="0">
-                        <a href="#projects" >Projects</a>
+                    <li id="ham-slide">
+                        <a href="#projects">Projects</a>
                     </li>
-                    <li tabindex="0">
-                        <a href="#contact" >Contact</a>
+                    <li id="ham-slide">
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
                 
-                <div tabindex="0" class="hamburger ">
-
-                    <input type="checkbox" name="hamburger" id="ham-check">
-
-                    <span></span>
-                    <span></span>
-                    <span></span>
-
-                    <ul class="hamburger-menu" id="ham">
-                        <li id="ham-slide">
-                            <a href="#home">Home</a>
-                        </li>
-                        <li id="ham-slide">
-                            <a href="#about">About</a>
-                        </li>
-                        <li id="ham-slide">
-                            <a href="#projects">Projects</a>
-                        </li>
-                        <li id="ham-slide">
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                    
-                </div>
+            </div>
         </nav>
         </div>        
-                
-
+                       
+        <!-- Navigation -->
         
-            <!-- Navigation -->
-            
-            <section class="welcome" id="home">
-                <div class="wrapper">
-                    <div class="welcome-name">
-                        <h1>
-                            <span class="name" id="messenger">Afua Deborah</span>
-                            <br>
-                            <span>Front-End</span>
-                            <br>
-                            <span>Web Developer</span>
-                        </h1>
-                    </div>
+        <section class="welcome" id="home">
+            <div class="wrapper">
+                <div class="welcome-name">
+                    <h1>
+                        <span class="name" id="messenger">Afua Deborah</span>
+                        <br>
+                        <span>Front-End</span>
+                        <br>
+                        <span>Web Developer</span>
+                    </h1>
                 </div>
-            </section>
-            <i class="material-icons arrow" tabindex="0">expand_more</i>
-            <!-- Welcome Page -->
+            </div>
+        </section>
+        <i class="material-icons arrow" tabindex="0">expand_more</i>
+        <!-- Welcome Page -->
     </header>
    
     <main>
@@ -595,66 +597,7 @@
 
     </main>
 
-    <!-- <ul class="socials">
-        <li tabIndex="0">
-            <a href="https://github.com/afuadeborah"
-            target="_blank" 
-            rel="noopener noreferrer" 
-            
-            aria-hidden="true"
-            title= "@afuadeborah on Github"
-            alt="Go to Afua's Github">
-                <i class="devicons devicons-github_badge"></i>
-            </a>
-        </li>
-
-        <li tabIndex="0">
-            <a href="https://www.linkedin.com/in/meet-afua-frimpong/"
-            target="_blank" 
-            rel="noopener noreferrer" 
-            aria-hidden="true"
-            title= "Afua's LinkedIn"
-            alt="Go to Afua's LinkedIn">
-                <i class="fab fa-linkedin"></i>
-            </a>
-        </li>
-
-        <li tabIndex="0">
-            <a href="https://twitter.com/afuadeborah_"
-            target="_blank" 
-            rel="noopener noreferrer" 
-            aria-hidden="true"
-            title="@afuadeborah_ on Twitter"
-            alt="Go to Afua's Twitter">
-
-                <i class="fab fa-twitter"></i>
-            </a>
-        </li>
-
-        <li tabIndex="0">
-            <a href="https://medium.com/@afuafrimpong4"
-            target="_blank" 
-            rel="noopener noreferrer" 
-            aria-hidden="true"
-            title="@afuafrimpong4_ on Medium"
-            alt="Go to Afua's blog on Medium">
-                <i class="fab fa-medium-m"></i>
-            </a>
-        </li>
-    </ul>  -->
-<!-- Save this for footer -->
-
-
-
-
-
-
-        
-
-
-  
-   
-
+    
 
 
 
@@ -663,6 +606,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/scramble.js"></script>
     <script src="./script.js"></script>
+
 </body>
 </html>
 <!-- Special credits to Erik Terwan's Codepen for the Hamburger Menu https://codepen.io/erikterwan/pen/EVzeRP?editors=1100 -->
