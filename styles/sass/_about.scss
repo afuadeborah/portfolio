@@ -77,33 +77,9 @@
 
 }
 
-.contact-icons {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 25px;
 
-    li {
-        flex-basis: 20%;
-        text-align: center;
-
-        i {
-            font-size: 4rem;
-
-            &:hover {
-                border-bottom: 4px solid $orange;
-            }
-
-            &:active {
-                border-bottom: 4px solid $yellow;
-            }
-
-            &:focus {
-               outline: 1px dotted $yellow; 
-            }
-
-        }
-
-    }
+.contact-icons i:hover {
+    color: $orange;
 }
 
 
@@ -133,17 +109,17 @@ h3,
 
 
 .skills-title {
-    flex-basis: calc(20% - 10px);
+    flex-basis: 23%;
     margin: 10px;
     padding: 10px;
 
         i {
             font-size: 6.5rem;
-            color: $yellow;
-            text-shadow: 3px 3px 0 $orange;
-
+            
+            
             &:hover {
-                transform: scale(1.2);
+                transform: scale(1.1);
+                color: $yellow;
             }
         }
 

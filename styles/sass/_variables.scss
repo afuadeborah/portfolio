@@ -32,7 +32,7 @@ $orange: #F06000;
 }
 
 @mixin mobile-tablet {
-    @media (max-width: 767px){
+    @media (max-width: 780px){
         @content;
     }
 }

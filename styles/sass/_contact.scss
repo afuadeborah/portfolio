@@ -1,8 +1,8 @@
 .contact {
-    height: 100vh;
+    height: 100%;
 
     h2 span,
-    a:hover {
+    .form-text a:hover {
         @include underline($yellow);
     }
 }
@@ -63,16 +63,19 @@ form {
         }
 
         a {
+            @include font-size(18);
             text-transform: uppercase;
             font-weight: bold;
             letter-spacing: 3px;
-
 
         }
 
     }
 }
 
+.contact-icons i:hover {
+    color: $yellow;
+}
 
 
 

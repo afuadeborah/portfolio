@@ -7,6 +7,7 @@
 @import 'about';
 @import 'projects';
 @import 'contact';
+@import 'footer';
 
 
 
@@ -71,7 +72,8 @@ h3,
 h4,
 .skills p,
 button,
-label {
+label,
+footer p {
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -86,6 +88,36 @@ h2 {
     flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
+}
+
+// Contact Icons
+.contact-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+
+    li {
+        flex-basis: 20%;
+        text-align: center;
+
+        i {
+            font-size: 4rem;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            &:active {
+                border-bottom: 4px solid $yellow;
+            }
+
+            &:focus {
+               outline: 1px dotted $yellow; 
+            }
+
+        }
+
+    }
 }
 
 
@@ -144,13 +176,11 @@ h2 {
         }
 
         .contact-icons {
-            li:last-of-type {
-                display: none;
-
-                i {
-                    @include font-size(35);
-                }
+            
+            i {
+                @include font-size(35);
             }
+            
         }
 
     }

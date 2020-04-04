@@ -1219,36 +1219,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   font-weight: bold;
 }
 
-.contact-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-top: 25px;
-}
-
-.contact-icons li {
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
-  text-align: center;
-}
-
-.contact-icons li i {
-  font-size: 4rem;
-}
-
-.contact-icons li i:hover {
-  border-bottom: 4px solid #F06000;
-}
-
-.contact-icons li i:active {
-  border-bottom: 4px solid #FFA818;
-}
-
-.contact-icons li i:focus {
-  outline: 1px dotted #FFA818;
+.contact-icons i:hover {
+  color: #F06000;
 }
 
 .skills {
@@ -1272,21 +1244,20 @@ h3,
 }
 
 .skills-title {
-  -ms-flex-preferred-size: calc(20% - 10px);
-      flex-basis: calc(20% - 10px);
+  -ms-flex-preferred-size: 23%;
+      flex-basis: 23%;
   margin: 10px;
   padding: 10px;
 }
 
 .skills-title i {
   font-size: 6.5rem;
-  color: #FFA818;
-  text-shadow: 3px 3px 0 #F06000;
 }
 
 .skills-title i:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #FFA818;
 }
 
 .skills-title p {
@@ -1390,11 +1361,11 @@ h3,
 }
 
 .contact {
-  height: 100vh;
+  height: 100%;
 }
 
 .contact h2 span,
-.contact a:hover {
+.contact .form-text a:hover {
   -webkit-box-shadow: inset 0px -5px 0px 0px #FFA818;
           box-shadow: inset 0px -5px 0px 0px #FFA818;
 }
@@ -1461,9 +1432,21 @@ form button {
 }
 
 .form-container .form-text a {
+  font-size: 1.8rem;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 3px;
+}
+
+.contact-icons i:hover {
+  color: #FFA818;
+}
+
+footer {
+  height: 5vh;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 html {
@@ -1525,7 +1508,8 @@ h3,
 h4,
 .skills p,
 button,
-label {
+label,
+footer p {
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -1549,11 +1533,44 @@ h2 {
   margin-bottom: 10px;
 }
 
+.contact-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
+}
+
+.contact-icons li {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  text-align: center;
+}
+
+.contact-icons li i {
+  font-size: 4rem;
+}
+
+.contact-icons li i:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.contact-icons li i:active {
+  border-bottom: 4px solid #FFA818;
+}
+
+.contact-icons li i:focus {
+  outline: 1px dotted #FFA818;
+}
+
 .spacer {
   height: 20vh;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 780px) {
   p {
     font-size: 1.75rem;
   }
@@ -1599,10 +1616,7 @@ h2 {
     text-align: center;
     margin-top: 50px;
   }
-  .about-me-container .contact-icons li:last-of-type {
-    display: none;
-  }
-  .about-me-container .contact-icons li:last-of-type i {
+  .about-me-container .contact-icons i {
     font-size: 3.5rem;
   }
   .project {
