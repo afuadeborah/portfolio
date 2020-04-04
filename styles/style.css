@@ -989,6 +989,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .hamburger {
   display: none;
   text-align: right;
+  padding-right: 40px;
   z-index: 1;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1019,7 +1020,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   height: 50px;
   position: absolute;
   top: -10px;
-  right: -35px;
+  right: 0px;
   cursor: pointer;
   opacity: 0;
   z-index: 2;

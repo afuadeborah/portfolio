@@ -19,20 +19,32 @@ const app = {};
 
 // Navigation Menu
 app.menuSlide = () => {
-    const menuLinks = $('#ham-slide');
+    const menuLinks = $('#ham');
     const checkbox = $('#ham-check');
 
-    menuLinks.on('click', function(e){
-        
+    menuLinks.on('click', function(){
+    
+
         checkbox.prop('checked', false);
+  
+         
+        
+        
 
     })
+
+
+    
 }
 
-    // $( '.menu a' ).on("click", function(){
-    // $('.menu').removeClass('open');
-    // });
+// app.arrowSlide = () => {
+//     const arrow = $('.arrow');
+//     arrow.on('click', function(){
+//         $('body').scrollTo('#about');
+//     })
+// }
 
+// app.arrowSlide();
 
 
 
