@@ -23,28 +23,21 @@ app.menuSlide = () => {
     const checkbox = $('#ham-check');
 
     menuLinks.on('click', function(){
-    
-
         checkbox.prop('checked', false);
-  
-         
-        
-        
 
-    })
-
-
-    
+    })    
 }
 
-// app.arrowSlide = () => {
-//     const arrow = $('.arrow');
-//     arrow.on('click', function(){
-//         $('body').scrollTo('#about');
-//     })
-// }
+app.arrowSlide = () => {
+    const arrow = $('.arrow');
+    arrow.on('click', function(){
+        $('html, body').animate({
+        scrollTop: $("#about").offset().top
+        }, 2000);
+    })
+}
 
-// app.arrowSlide();
+
 
 
 
@@ -155,6 +148,7 @@ app.init = () => {
     let messenger = new Messenger($('#messenger'));
 
     app.menuSlide();
+    app.arrowSlide();
 
 }
 
