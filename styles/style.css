@@ -1003,14 +1003,14 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   letter-spacing: 3px;
 }
 
-.hamburger li {
-  padding: 20px 0;
-}
-
-.hamburger li:hover {
+.hamburger a:hover {
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
   color: #FFA818;
+}
+
+.hamburger li {
+  padding: 20px 0;
 }
 
 .hamburger input {
@@ -1019,7 +1019,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   height: 50px;
   position: absolute;
   top: -10px;
-  right: 5px;
+  right: -35px;
   cursor: pointer;
   opacity: 0;
   z-index: 2;
@@ -1043,6 +1043,12 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   opacity: 1;
   -webkit-transform: rotate(-45deg) translate(0px, -2px);
           transform: rotate(-45deg) translate(0px, -2px);
+}
+
+.hamburger input:checked ~ ul {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  opacity: 1;
 }
 
 .hamburger span {
@@ -1070,6 +1076,25 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .hamburger span:last-child {
   -webkit-transform-origin: 0% 100%;
           transform-origin: 0% 100%;
+}
+
+.hamburger-menu {
+  position: absolute;
+  width: 700px;
+  margin: -100px 0 0 0;
+  padding: 50px;
+  padding-top: 125px;
+  right: -50px;
+  background: #030200;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-transform: translate(100%, 0);
+          transform: translate(100%, 0);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
 .welcome {
