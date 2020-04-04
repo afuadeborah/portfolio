@@ -18,6 +18,21 @@ const app = {};
 
 
 // Navigation Menu
+app.menuSlide = () => {
+    const menuLinks = $('#ham-slide');
+    const checkbox = $('#ham-check');
+
+    menuLinks.on('click', function(e){
+        
+        checkbox.prop('checked', false);
+
+    })
+}
+
+    // $( '.menu a' ).on("click", function(){
+    // $('.menu').removeClass('open');
+    // });
+
 
 
 
@@ -126,6 +141,8 @@ app.init = () => {
     }
     console.clear();
     let messenger = new Messenger($('#messenger'));
+
+    app.menuSlide();
 
 }
 

@@ -1080,12 +1080,13 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .hamburger-menu {
   position: absolute;
-  width: 700px;
+  width: 750px;
   margin: -100px 0 0 0;
   padding: 50px;
   padding-top: 125px;
   right: -50px;
-  background: #030200;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.85)), to(rgba(0, 0, 0, 0.95)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.95));
   -webkit-font-smoothing: antialiased;
   -webkit-transform-origin: 0% 0%;
           transform-origin: 0% 0%;
