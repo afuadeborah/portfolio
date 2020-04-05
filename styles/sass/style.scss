@@ -94,6 +94,10 @@ h2,
     display: flex;
 }
 
+label {
+    display: none;
+}
+
 // Contact Icons
 .socials {
     justify-content: center;
@@ -165,8 +169,8 @@ h2,
         margin: 0 auto;    
     }
 
-    .project-two,
-    .project-four,
+    .project-container .project-two,
+    .project-container .project-four,
     .form-container {
         flex-direction: column-reverse;
     }

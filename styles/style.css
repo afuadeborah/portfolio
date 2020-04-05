@@ -1561,6 +1561,10 @@ h2,
   display: flex;
 }
 
+label {
+  display: none;
+}
+
 .socials {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1625,8 +1629,8 @@ h2,
   .form-text {
     margin: 0 auto;
   }
-  .project-two,
-  .project-four,
+  .project-container .project-two,
+  .project-container .project-four,
   .form-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
