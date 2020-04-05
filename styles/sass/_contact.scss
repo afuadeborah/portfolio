@@ -5,6 +5,10 @@
     .form-text a:hover {
         @include underline($yellow);
     }
+
+    .socials i:hover {
+        color: $yellow;
+    }
 }
 
 .form-container, 
@@ -73,9 +77,6 @@ form {
     }
 }
 
-.yellow i:hover {
-    color: $yellow;
-}
 
 
 // Footer

@@ -1219,7 +1219,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   font-weight: bold;
 }
 
-.contact-icons i:hover {
+.about-text .socials i:hover {
   color: #F06000;
 }
 
@@ -1370,6 +1370,10 @@ h3,
           box-shadow: inset 0px -5px 0px 0px #FFA818;
 }
 
+.contact .socials i:hover {
+  color: #FFA818;
+}
+
 .form-container,
 form {
   display: -webkit-box;
@@ -1436,17 +1440,6 @@ form button {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 3px;
-}
-
-.contact-icons i:hover {
-  color: #FFA818;
-}
-
-footer {
-  height: 5vh;
-  padding: 10px;
-  text-align: center;
-  margin-top: 20px;
 }
 
 footer {
@@ -1540,36 +1533,35 @@ h2 {
   margin-bottom: 10px;
 }
 
-.contact-icons {
+.socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.contact-icons li {
+.socials li {
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
   text-align: center;
 }
 
-.contact-icons li i {
+.socials li i {
   font-size: 4rem;
 }
 
-.contact-icons li i:hover {
+.socials li i:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.contact-icons li i:active {
+.socials li i:active {
   border-bottom: 4px solid #FFA818;
 }
 
-.contact-icons li i:focus {
+.socials li i:focus {
   outline: 1px dotted #FFA818;
 }
 
@@ -1595,7 +1587,8 @@ h2 {
      -ms-user-select: none;
          user-select: none;
   }
-  .about-name {
+  .about-name,
+  h2 {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;

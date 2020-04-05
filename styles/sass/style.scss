@@ -7,7 +7,7 @@
 @import 'about';
 @import 'projects';
 @import 'contact';
-@import 'footer';
+
 
 
 
@@ -91,10 +91,9 @@ h2 {
 }
 
 // Contact Icons
-.contact-icons {
+.socials {
     display: flex;
-    justify-content: space-between;
-    margin-top: 25px;
+    justify-content: center;
 
     li {
         flex-basis: 20%;
@@ -137,7 +136,6 @@ h2 {
 // Navigation
     .top-nav {
         display: none;
-
     }
 
     .hamburger {
@@ -152,7 +150,8 @@ h2 {
     }
 
 // About Me
-    .about-name {
+    .about-name,
+    h2 {
         align-items: flex-start;
     }
 

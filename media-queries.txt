@@ -42,3 +42,26 @@ Go in and get rid of everything commented out
 <!-- <span class="sr-only">Go to Tasty on Instagram</span> -->
 <!-- put on each icon -->
 
+
+li {
+        flex-basis: 20%;
+        text-align: center;
+
+        i {
+            font-size: 4rem;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            &:active {
+                border-bottom: 4px solid $yellow;
+            }
+
+            &:focus {
+               outline: 1px dotted $yellow; 
+            }
+
+        }
+
+    }
