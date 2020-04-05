@@ -1533,6 +1533,10 @@ h2 {
   margin-bottom: 10px;
 }
 
+li i:focus {
+  outline: 1px dotted #FFA818;
+}
+
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1570,8 +1574,10 @@ h2 {
 }
 
 @media (max-width: 780px) {
-  p {
-    font-size: 1.75rem;
+  .about-text p,
+  .project p,
+  .form-text p {
+    font-size: 1.6rem;
   }
   .top-nav {
     display: none;
@@ -1619,6 +1625,9 @@ h2 {
   .about-me-container .contact-icons i {
     font-size: 3.5rem;
   }
+  .skills-title p {
+    font-size: 1.2rem;
+  }
   .project {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1628,6 +1637,20 @@ h2 {
   .project .mockup,
   .project .project-text {
     width: 100%;
+  }
+  .project i {
+    font-size: 4.1rem;
+  }
+  .project h4,
+  .project .project-links a {
+    font-size: 1.8rem;
+  }
+  .project-two,
+  .project-four {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .project-text:nth-child(1),
   .mockup:nth-child(1),
@@ -1649,5 +1672,8 @@ h2 {
   }
   .form-container .form-text {
     margin-bottom: 50px;
+  }
+  .form-container .form-text br {
+    margin: 0;
   }
 }

@@ -90,6 +90,10 @@ h2 {
     margin-bottom: 10px;
 }
 
+li i:focus {
+    outline: 1px dotted $yellow;
+}
+
 // Contact Icons
 .socials {
     display: flex;
@@ -129,8 +133,10 @@ h2 {
 // Media Queries
 @include mobile-tablet {
 // Standard 
-    p {
-        @include font-size(17.5);
+    .about-text p,
+    .project p,
+    .form-text p {
+        @include font-size(16);
     }
 
 // Navigation
@@ -184,6 +190,10 @@ h2 {
         }
 
     }
+    
+    .skills-title p {
+        @include font-size(12);
+    }
 
 // Projects
     .project {
@@ -193,7 +203,22 @@ h2 {
         .project-text {
             width: 100%;
         }
+
+        i {
+            @include font-size(41);
+        }
+
+        h4,
+        .project-links a {
+            @include font-size(18);
+        }
     }
+
+    .project-two,
+    .project-four {
+        flex-direction: column-reverse;
+    }
+
 
     .project-text:nth-child(1),
     .mockup:nth-child(1),
@@ -216,6 +241,10 @@ h2 {
 
         .form-text {
             margin-bottom: 50px;
+
+            br {
+                margin: 0;
+            }
         }
     }
 
