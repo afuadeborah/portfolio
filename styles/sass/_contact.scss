@@ -73,10 +73,18 @@ form {
     }
 }
 
-.contact-icons i:hover {
+.yellow i:hover {
     color: $yellow;
 }
 
+
+// Footer
+footer {
+    height: 5vh;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;   
+}
 
 
 

@@ -10,6 +10,15 @@
     - column reverse every other project
     - crop mockup photos
 
+Mobile
+    - change H1 font size
+    - wrap icons under about me
+    - change skills section size
+    - change font size on footer
+    - change font size on inputs, email and placholders
+    - change icon sizes
+
+
 
 Make a function on hover to show the name of the skills in the project section.
 
@@ -33,50 +42,3 @@ Go in and get rid of everything commented out
 <!-- <span class="sr-only">Go to Tasty on Instagram</span> -->
 <!-- put on each icon -->
 
-<!-- <ul class="socials">
-        <li tabIndex="0">
-            <a href="https://github.com/afuadeborah"
-            target="_blank" 
-            rel="noopener noreferrer" 
-            
-            aria-hidden="true"
-            title= "@afuadeborah on Github"
-            alt="Go to Afua's Github">
-                <i class="devicons devicons-github_badge"></i>
-            </a>
-        </li>
-
-        <li tabIndex="0">
-            <a href="https://www.linkedin.com/in/meet-afua-frimpong/"
-            target="_blank" 
-            rel="noopener noreferrer" 
-            aria-hidden="true"
-            title= "Afua's LinkedIn"
-            alt="Go to Afua's LinkedIn">
-                <i class="fab fa-linkedin"></i>
-            </a>
-        </li>
-
-        <li tabIndex="0">
-            <a href="https://twitter.com/afuadeborah_"
-            target="_blank" 
-            rel="noopener noreferrer" 
-            aria-hidden="true"
-            title="@afuadeborah_ on Twitter"
-            alt="Go to Afua's Twitter">
-
-                <i class="fab fa-twitter"></i>
-            </a>
-        </li>
-
-        <li tabIndex="0">
-            <a href="https://medium.com/@afuafrimpong4"
-            target="_blank" 
-            rel="noopener noreferrer" 
-            aria-hidden="true"
-            title="@afuafrimpong4_ on Medium"
-            alt="Go to Afua's blog on Medium">
-                <i class="fab fa-medium-m"></i>
-            </a>
-        </li>
-    </ul>  -->
