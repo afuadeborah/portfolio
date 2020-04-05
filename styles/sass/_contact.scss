@@ -1,3 +1,14 @@
+.form-container, 
+form,
+.back-to-top {
+    display: flex;
+}
+
+.form-container, 
+form {
+    align-items: center;
+}
+
 .contact {
     height: 100%;
 
@@ -9,13 +20,18 @@
     .socials i:hover {
         color: $yellow;
     }
+
+    .back-to-top {
+        margin-top: 20%;
+        cursor: pointer;
+        justify-content: center;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
 }
 
-.form-container, 
-form {
-    display: flex;
-    align-items: center;
-}
 
 form {
     flex-direction: column;
@@ -63,6 +79,13 @@ textarea::placeholder,
     text-transform: uppercase;
 }
 
+input::placeholder,
+textarea::placeholder {
+    @include font-size(16);
+}
+
+
+
 .form-container {
     margin: 50px 0;
 
@@ -84,6 +107,7 @@ textarea::placeholder,
 
     }
 }
+
 
 
 

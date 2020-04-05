@@ -1292,11 +1292,6 @@ h3,
   font-size: 4.5rem;
 }
 
-.project i:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
 .project a {
   text-transform: uppercase;
 }
@@ -1360,6 +1355,21 @@ h3,
   margin-right: 50px;
 }
 
+.form-container,
+form,
+.back-to-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-container,
+form {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .contact {
   height: 100%;
 }
@@ -1374,14 +1384,17 @@ h3,
   color: #FFA818;
 }
 
-.form-container,
-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.contact .back-to-top {
+  margin-top: 20%;
+  cursor: pointer;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .back-to-top:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 form {
@@ -1442,6 +1455,26 @@ input::placeholder,
 textarea::placeholder,
 .form-container a {
   text-transform: uppercase;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  font-size: 1.6rem;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  font-size: 1.6rem;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  font-size: 1.6rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-size: 1.6rem;
 }
 
 .form-container {
@@ -1530,6 +1563,7 @@ h1,
 h2,
 h3,
 h4,
+.back-to-top,
 .skills p,
 button,
 label,
@@ -1574,7 +1608,6 @@ label {
 .socials li {
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
-  text-align: center;
 }
 
 .socials li i {
@@ -1592,6 +1625,11 @@ label {
 
 .socials li i:focus {
   outline: 1px dotted #FFA818;
+}
+
+.socials li,
+.back-to-top {
+  text-align: center;
 }
 
 .spacer {
@@ -1641,6 +1679,9 @@ label {
   .mockup,
   .project-text {
     width: 100%;
+  }
+  .spacer {
+    height: 15vh;
   }
   .top-nav {
     display: none;

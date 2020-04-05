@@ -18,9 +18,21 @@ app.arrowSlide = () => {
     arrow.on('click', function(){
         $('html, body').animate({
         scrollTop: $("#about").offset().top
-        }, 2000);
+        }, 1500);
     })
 }
+
+// Scroll back to top
+app.backToTop = () => {
+    const upTop = $('#top');
+
+    upTop.on('click', function(){
+        $('html, body').animate({
+        scrollTop: $("#home").offset().top
+        }, 1500);
+    })
+}
+
 
 
 
@@ -133,7 +145,10 @@ app.init = () => {
     let messenger = new Messenger($('#messenger'));
 
     app.menuSlide();
+
+    // Scroll To
     app.arrowSlide();
+    app.backToTop();
 
 }
 

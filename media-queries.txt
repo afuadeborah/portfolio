@@ -4,11 +4,8 @@
 - Adjust font-sizes here where necessary
 
 768px
-    - Fix size of spacer
-    - Stack projects
     - a link in contact section causes horizontal scroll
-    - column reverse every other project
-    - crop mockup photos
+
 
 Mobile
     - change H1 font size
@@ -18,50 +15,25 @@ Mobile
     - change font size on inputs, email and placholders
     - change icon sizes
 
+Add attributes to each icon
 
 
-Make a function on hover to show the name of the skills in the project section.
 
 Add span and aria hidden to icons
 
-LinkedIn, direct email, twitter, github, resume, medium
-
-Might not need material icons
 
 Go in and get rid of everything commented out
 
-// Media Query at 830 for horizontal scroll
+
 // Media Query at 530 for h1
 
 // Media Query 1000px for text beside picture change font size
 
-// Media Query at 830 for horizontal scroll
+
 // Media Query at 530 for h1
 
 <!-- aria-hidden="true" -->
 <!-- <span class="sr-only">Go to Tasty on Instagram</span> -->
 <!-- put on each icon -->
 
-
-li {
-        flex-basis: 20%;
-        text-align: center;
-
-        i {
-            font-size: 4rem;
-
-            &:hover {
-                transform: scale(1.1);
-            }
-
-            &:active {
-                border-bottom: 4px solid $yellow;
-            }
-
-            &:focus {
-               outline: 1px dotted $yellow; 
-            }
-
-        }
-
-    }
+Add resume in skills or contact
