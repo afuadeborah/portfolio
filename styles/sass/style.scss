@@ -84,7 +84,6 @@ h1 {
 
 h2 {
     @include font-size(35);
-    // display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
@@ -236,19 +235,21 @@ h2,
     
 
 // Contact
-    .form-container {
-        form,
-        .form-text {
-            width: 90%;
-        }
+.form-container {
+    form,
+    .form-text {
+        width: 90%;
+    }
 
-        .form-text {
-            margin-bottom: 50px;
+    .form-text {
+        margin-bottom: 50px;
 
-            br {
-                margin: 0;
-            }
+        br {
+            margin: 0;
         }
     }
+
+}
+
 
 }
