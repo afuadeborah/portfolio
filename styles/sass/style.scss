@@ -57,7 +57,7 @@ a {
 
 
 body {
-    @include font-size(20);
+    @include font-size(18);
     font-family: $body-font;
     background-color: $black;
     color: $white;
@@ -138,6 +138,7 @@ label {
 
 
 // Media Queries
+
 @include mobile-tablet {
 // Standard 
     .about-text p,
@@ -230,6 +231,7 @@ label {
         @include font-size(12);
     }
 
+
 // Projects
     .project {
         flex-direction: column;
@@ -245,23 +247,58 @@ label {
     }
 
     
-
 // Contact
-.form-container {
-    form,
-    .form-text {
-        width: 95%;
+    .form-container {
+        form,
+        .form-text {
+            width: 95%;
+        }
+
+        .form-text {
+            margin-bottom: 50px;
+
+            br {
+                margin: 0;
+            }
+        }
+
     }
 
-    .form-text {
-        margin-bottom: 50px;
-
-        br {
-            margin: 0;
-        }
+    footer p {
+        @include font-size(15);
     }
 
 }
 
+@include mobile {
 
+    .about-me-container .about-pic {
+        width: 90%;
+    }
+
+    .about-name,
+    h2,
+    .about-me-container .about-me {
+        align-items: center;
+    }
+
+    .skills-title {
+        flex-basis: 40%;
+        margin: 0;
+
+        i {
+            @include font-size(60);
+        }
+    }
+
+    .project-text,
+    .project-text:nth-child(1)  {
+        text-align: center;
+        
+    }
+    
+    .project-text {
+        align-items: center;
+    
+    }
 }

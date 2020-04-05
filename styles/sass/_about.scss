@@ -53,6 +53,7 @@
         .about-pic {
             margin-right: 30px;
             width: 35%;
+            align-self: start;
 
         }
 }       
@@ -62,7 +63,6 @@
     width: 60%;
     
         p {
-            @include font-size(18);
 
             &:nth-of-type(2),
             &:nth-of-type(3) {

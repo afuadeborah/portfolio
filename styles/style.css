@@ -1201,14 +1201,13 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .about-me-container .about-pic {
   margin-right: 30px;
   width: 35%;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
 }
 
 .about-text {
   width: 60%;
-}
-
-.about-text p {
-  font-size: 1.8rem;
 }
 
 .about-text p:nth-of-type(2), .about-text p:nth-of-type(3) {
@@ -1501,9 +1500,7 @@ textarea::placeholder {
 
 footer {
   height: 5vh;
-  padding: 10px;
   text-align: center;
-  margin-top: 20px;
 }
 
 html {
@@ -1550,7 +1547,7 @@ a {
 }
 
 body {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: "Sen", sans-serif;
   background-color: #030200;
   color: #F8F8F8;
@@ -1740,5 +1737,38 @@ label {
   }
   .form-container .form-text br {
     margin: 0;
+  }
+  footer p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-me-container .about-pic {
+    width: 90%;
+  }
+  .about-name,
+  h2,
+  .about-me-container .about-me {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .skills-title {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    margin: 0;
+  }
+  .skills-title i {
+    font-size: 6rem;
+  }
+  .project-text,
+  .project-text:nth-child(1) {
+    text-align: center;
+  }
+  .project-text {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
