@@ -1014,7 +1014,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   padding: 20px 0;
 }
 
-.hamburger input {
+.hamburger .ham-input {
   display: block;
   width: 50px;
   height: 50px;
@@ -1027,26 +1027,26 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-touch-callout: none;
 }
 
-.hamburger input:checked ~ span {
+.hamburger .ham-input:checked ~ span {
   opacity: 1;
   -webkit-transform: rotate(45deg) translate(0px, 0px);
           transform: rotate(45deg) translate(0px, 0px);
   background: #F8F8F8;
 }
 
-.hamburger input:checked ~ span:nth-last-child(3) {
+.hamburger .ham-input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   -webkit-transform: rotate(0deg) scale(0.2, 0.2);
           transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-.hamburger input:checked ~ span:nth-last-child(2) {
+.hamburger .ham-input:checked ~ span:nth-last-child(2) {
   opacity: 1;
   -webkit-transform: rotate(-45deg) translate(0px, -2px);
           transform: rotate(-45deg) translate(0px, -2px);
 }
 
-.hamburger input:checked ~ ul {
+.hamburger .ham-input:checked ~ ul {
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
   opacity: 1;
@@ -1744,6 +1744,9 @@ label {
 }
 
 @media (max-width: 500px) {
+  h1 {
+    font-size: 3.3rem;
+  }
   .about-me-container .about-pic {
     width: 90%;
   }

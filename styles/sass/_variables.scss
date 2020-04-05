@@ -25,12 +25,6 @@ $orange: #F06000;
 
 
 // Media Queries
-@mixin desktop {
-    @media (max-width: 1050px){
-        @content;
-    }
-}
-
 @mixin mobile-tablet {
     @media (max-width: 780px){
         @content;

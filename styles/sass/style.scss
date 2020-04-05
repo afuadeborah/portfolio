@@ -271,6 +271,9 @@ label {
 }
 
 @include mobile {
+    h1 {
+        @include font-size(33);
+    }
 
     .about-me-container .about-pic {
         width: 90%;
