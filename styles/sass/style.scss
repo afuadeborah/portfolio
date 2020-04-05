@@ -84,19 +84,19 @@ h1 {
 
 h2 {
     @include font-size(35);
-    display: flex;
+    // display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
 }
 
-li i:focus {
-    outline: 1px dotted $yellow;
+h2,
+.socials {
+    display: flex;
 }
 
 // Contact Icons
 .socials {
-    display: flex;
     justify-content: center;
 
     li {
@@ -135,9 +135,49 @@ li i:focus {
 // Standard 
     .about-text p,
     .project p,
-    .form-text p {
+    .form-text p,
+    .form-text a {
         @include font-size(16);
     }
+
+    h1 {
+        @include font-size(40);
+    }
+
+    .about-me-container .about-text,
+    form,
+    .form-text {
+        text-align: center;
+    }
+
+    .about-name,
+    h2,
+    .about-me-container .about-me {
+        align-items: flex-start;
+    }
+
+    .about-me-container .about-pic,
+    .project-text:nth-child(1),
+    .mockup:nth-child(1),
+    .project-text:nth-child(2),
+    .mockup:nth-child(2),
+    form,
+    .form-text {
+        margin: 0 auto;    
+    }
+
+    .project-two,
+    .project-four,
+    .form-container {
+        flex-direction: column-reverse;
+    }
+
+    .about-me-container .about-text,
+    .mockup,
+    .project-text {
+        width: 100%;
+    }
+    
 
 // Navigation
     .top-nav {
@@ -155,40 +195,24 @@ li i:focus {
         user-select: none;
     }
 
-// About Me
-    .about-name,
-    h2 {
-        align-items: flex-start;
-    }
 
+// About Me
     .about-me-container {
         flex-direction: column;
         align-items: center;
 
-
-        .about-me {
-            align-items: flex-start;
-        }
-
         .about-pic {
             width: 50%;
-            margin: 0 auto;
         }
 
         .about-text {
-            width: 100%;
-            text-align: center;
             margin-top: 50px;
         }
 
-        .contact-icons {
-            
-            i {
-                @include font-size(35);
-            }
-            
+        .contact-icons i {
+            @include font-size(35);
         }
-
+            
     }
     
     .skills-title p {
@@ -198,11 +222,6 @@ li i:focus {
 // Projects
     .project {
         flex-direction: column;
-
-        .mockup,
-        .project-text {
-            width: 100%;
-        }
 
         i {
             @include font-size(41);
@@ -214,29 +233,13 @@ li i:focus {
         }
     }
 
-    .project-two,
-    .project-four {
-        flex-direction: column-reverse;
-    }
-
-
-    .project-text:nth-child(1),
-    .mockup:nth-child(1),
-    .project-text:nth-child(2),
-    .mockup:nth-child(2) {
-        margin: 0 auto;
-        
-    }
+    
 
 // Contact
     .form-container {
-        flex-direction: column-reverse;
-
         form,
         .form-text {
             width: 90%;
-            margin: 0 auto;
-            text-align: center;
         }
 
         .form-text {

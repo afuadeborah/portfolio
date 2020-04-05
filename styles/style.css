@@ -1520,9 +1520,6 @@ h1 {
 
 h2 {
   font-size: 3.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1533,14 +1530,14 @@ h2 {
   margin-bottom: 10px;
 }
 
-li i:focus {
-  outline: 1px dotted #FFA818;
-}
-
+h2,
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.socials {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1576,8 +1573,46 @@ li i:focus {
 @media (max-width: 780px) {
   .about-text p,
   .project p,
-  .form-text p {
+  .form-text p,
+  .form-text a {
     font-size: 1.6rem;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  .about-me-container .about-text,
+  form,
+  .form-text {
+    text-align: center;
+  }
+  .about-name,
+  h2,
+  .about-me-container .about-me {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .about-me-container .about-pic,
+  .project-text:nth-child(1),
+  .mockup:nth-child(1),
+  .project-text:nth-child(2),
+  .mockup:nth-child(2),
+  form,
+  .form-text {
+    margin: 0 auto;
+  }
+  .project-two,
+  .project-four,
+  .form-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .about-me-container .about-text,
+  .mockup,
+  .project-text {
+    width: 100%;
   }
   .top-nav {
     display: none;
@@ -1593,12 +1628,6 @@ li i:focus {
      -ms-user-select: none;
          user-select: none;
   }
-  .about-name,
-  h2 {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
   .about-me-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1608,18 +1637,10 @@ li i:focus {
         -ms-flex-align: center;
             align-items: center;
   }
-  .about-me-container .about-me {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
   .about-me-container .about-pic {
     width: 50%;
-    margin: 0 auto;
   }
   .about-me-container .about-text {
-    width: 100%;
-    text-align: center;
     margin-top: 50px;
   }
   .about-me-container .contact-icons i {
@@ -1634,10 +1655,6 @@ li i:focus {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .project .mockup,
-  .project .project-text {
-    width: 100%;
-  }
   .project i {
     font-size: 4.1rem;
   }
@@ -1645,30 +1662,9 @@ li i:focus {
   .project .project-links a {
     font-size: 1.8rem;
   }
-  .project-two,
-  .project-four {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  .project-text:nth-child(1),
-  .mockup:nth-child(1),
-  .project-text:nth-child(2),
-  .mockup:nth-child(2) {
-    margin: 0 auto;
-  }
-  .form-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
   .form-container form,
   .form-container .form-text {
     width: 90%;
-    margin: 0 auto;
-    text-align: center;
   }
   .form-container .form-text {
     margin-bottom: 50px;
