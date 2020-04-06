@@ -33,6 +33,17 @@ app.backToTop = () => {
     })
 }
 
+// Switch to Light Mode
+app.switchLight = () => {
+    const toggleLight = $('#light-dark');
+
+    toggleLight.on('click', function(){
+        $('body').toggleClass('light');
+
+    })
+}
+
+
 
 
 
@@ -149,6 +160,9 @@ app.init = () => {
     // Scroll To
     app.arrowSlide();
     app.backToTop();
+
+    // Light Mode
+    app.switchLight();
 
 }
 

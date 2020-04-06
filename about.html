@@ -9,6 +9,7 @@
     <!-- Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <script src="https://kit.fontawesome.com/813177f008.js" crossorigin="anonymous"></script>
       <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
     <!-- Libraries -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -17,63 +18,100 @@
     <title>About Me</title>
 
     <style>
+      body {
+        /* background-color: #fafafa; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        transition: background 0.2s linear;
+      } 
+
+      body.light {
+        background: white;
+      }
+      
       .toggle-light {
         display: block;
+        background-color: #111;
+        border-radius: 50px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        position: relative;
+        height: 26px;
+        width: 70px;
+        transform: scale(1.5);
+        left: 90%;
       }
+
+      .light-check {
+        opacity: 0;
+	      position: absolute;
+      }
+
+      .switch {
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        height: 22px;
+        width: 22px;
+        transform: translateX(0px);
+        transition: transform 0.2s linear;
+      }
+
+      input:checked + .toggle-light .switch {
+        transform: translateX(44px);
+      }
+
+      .fa-moon {
+        color: yellow;
+      }
+
+      .fa-sun {
+        color: orange;
+      }
+
+      
     </style>
 </head>
 <body>
 
-  <nav>
-    <ul class="top-nav">
-        <li tabindex="0">
-            <a href="#home" >Home</a>
-        </li>
-        <li tabindex="0">
-            <a href="#about" >About</a>
-        </li>
-        <li tabindex="0">
-            <a href="#projects" >Projects</a>
-        </li>
-        <li tabindex="0">
-            <a href="#contact" >Contact</a>
-        </li>
-    </ul>
-    
-    <div tabindex="0" class="hamburger">
-        <label class="visually-hidden" for="ham-check">Open menu</label>
-        <input type="checkbox" name="hamburger" id="ham-check"/>
+  <div class="switch-light">
+    <input type="checkbox" class="light-check" id="light-dark">
 
-        <span></span>
-        <span></span>
-        <span></span>
-
-        <ul class="hamburger-menu" id="ham">
-            <li tabindex="0">
-                <a href="#home">Home</a>
-            </li>
-            <li tabindex="0">
-                <a href="#about">About</a>
-            </li>
-            <li tabindex="0">
-                <a href="#projects">Projects</a>
-            </li>
-            <li tabindex="0">
-                <a href="#contact">Contact</a>
-            </li>
-            <li class="switch">
-              <input type="checkbox"  id="light-dark">
-              <label for="light-dark" class="toggle-light">Switch to Light Mode</label>
-            </li>
-        </ul>
-        
-    </div>
-  </nav>
+    <label for="light-dark" class="toggle-light">
+      <i class="fas fa-moon"></i>
+      <i class="fas fa-sun"></i>
+      <div class="switch"></div>
+    </label>
+  </div>
     
 
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/scramble.js"></script>
-    <script src="./script.js"></script>
+    <script>
+
+      $(document).ready(function(){
+        const toggle = $('light-check');
+        
+        toggle.on('change', function(){
+
+          $('body').addClass('light');
+          console.log("clicked");
+        });
+
+      });
+
+
+
+    </script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <!-- <script src="js/scramble.js"></script> -->
+    <!-- <script src="./script.js"></script> -->
 </body>
 </html>
