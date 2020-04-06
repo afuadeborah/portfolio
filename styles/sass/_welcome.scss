@@ -34,85 +34,92 @@
 
 // Light Mode
 // Special credits to Florin Pop's Codepen for the Light Theme toggle https://codepen.io/FlorinPop17/pen/XWWZYYG
-body {
-    transition: background 0.2s linear;
-  } 
 
-  body.light {
-    background-color: $white;
-    color: $black;
+body.light {
+background-color: $white;
+color: $black;
 
-        i,
-        .skills-title p,
-        a,
-        h1 {
-            color: $black;
-        }
+    i,
+    .skills-title p,
+    a,
+    h1 {
+        color: $black;
+    }
 
-        .hamburger {
-            a {
-                color: $white;
+    .hamburger {
+        a {
+            color: $white;
 
-                &:hover {
-                    color: $yellow;
-                }
-            }
-            span {
-                background: $black;
+            &:hover {
+                color: $yellow;
             }
         }
-
-        .welcome {
-            background-color: $white;
+        span {
+            background: $black;
         }
-  }
+    }
+
+    .welcome {
+        background-color: $white;
+    }
+
+    .fa-moon {
+        color: $yellow ;
+    }
+}
   
-  .toggle-light {
-    display: block;
-    background-color: $grey;
-    border-radius: 50px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
-    position: relative;
-    height: 23px;
-    width: 60px;
-    transform: scale(1.5);
-    left: 80%;
-  }
+.switch-light {
+    margin-top: 15px;
 
-  .light-check {
-    opacity: 0;
-    position: absolute;
-  }
+    .toggle-light {
+        display: block;
+        background-color: $black;
+        border-radius: 50px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        position: relative;
+        height: 23px;
+        width: 60px;
+        transform: scale(1.5);
+        left: 80%;
+        border: 2px solid white;
+    }
 
-  .switch {
-    background-color: #fff;
-    border-radius: 50%;
-    position: absolute;
-    top: -4px;
-    left: 0px;
-    height: 15px;
-    width: 15px;
-    transform: translateX(9px);
-    transition: transform 0.2s linear;
-  }
+    .light-check {
+        opacity: 0;
+        position: absolute;
+    }
 
-  input:checked + .toggle-light .switch {
-    transform: translateX(43px);
-  }
+    .switch {
+        background-color: $white;
+        border-radius: 50%;
+        position: absolute;
+        top: 2px;
+        left: -4px;
+        height: 15px;
+        width: 15px;
+        transform: translateX(9px);
+        transition: transform 0.2s linear;
+    }
 
-  .fa-sun,
-  .fa-moon {
-      @include font-size(14);
-  }
+    input:checked + .toggle-light .switch {
+        transform: translateX(40px);
+    }
 
-  .fa-sun {
-    color: $orange;
-  }
+    .fa-sun,
+    .fa-moon {
+        @include font-size(14);
+    }
 
-  .fa-moon {
-    color: $yellow ;
-  }
+    .fa-sun {
+        color: $orange;
+    }
+
+    .fa-moon {
+        color: $yellow ;
+    }
+}
+
