@@ -1195,7 +1195,7 @@ body.light .fa-moon {
   width: 60px;
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
-  left: 80%;
+  left: 85%;
   border: 2px solid white;
 }
 
@@ -1875,5 +1875,21 @@ label {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .switch-light .toggle-light {
+    left: 73%;
+    width: 50px;
+  }
+  .switch-light .fa-sun,
+  .switch-light .fa-moon {
+    font-size: 1.1rem;
+  }
+  .switch-light .switch {
+    top: 3px;
+    left: -12px;
+    height: 12px;
+    width: 12px;
+    -webkit-transform: translateX(16px);
+            transform: translateX(16px);
   }
 }

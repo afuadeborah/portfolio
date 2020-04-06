@@ -305,4 +305,27 @@ label {
         align-items: center;
     
     }
+
+    // Light Mode
+    .switch-light {
+
+        .toggle-light {
+        left: 73%;
+        width: 50px;
+        }
+
+        .fa-sun,
+        .fa-moon {
+            @include font-size(11);
+        }
+
+        .switch {
+            top: 3px;
+            left: -12px;
+            height: 12px;
+            width: 12px;
+            transform: translateX(16px);
+        }
+    }
+    
 }
