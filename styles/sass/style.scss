@@ -298,9 +298,10 @@ label {
             @include font-size(60);
         }
     }
-    .projects {
-        margin-top: 90px;
-        
+    
+    .project-container {
+        margin-top: 50px;
+    
         .project-text,
         .project-text:nth-child(1)  {
             text-align: center;
@@ -311,6 +312,7 @@ label {
             align-items: center;
         }
     }
+    
 
     .hamburger-menu {
         display: none;
@@ -324,15 +326,11 @@ label {
         @include font-size(12);
     }
 
-    .switch-light {
-        margin-top: 20px;
-    }
-
-
-
     // Light Mode
     .switch-light {
-
+        margin-top: 20px;
+        right: 10px;
+        
         .toggle-light {
         left: 73%;
         width: 50px;

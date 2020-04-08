@@ -1342,7 +1342,7 @@ body.light .fa-moon {
 }
 
 .skills {
-  height: 100vh;
+  height: 100%;
 }
 
 .skills h2 span {
@@ -1368,11 +1368,11 @@ h3,
   padding: 10px;
 }
 
-.skills-title i {
+.skills-title span {
   font-size: 6.5rem;
 }
 
-.skills-title i:hover {
+.skills-title span:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   color: #FFA818;
@@ -1406,7 +1406,7 @@ h3,
   display: flex;
 }
 
-.project i {
+.project .made-with span {
   font-size: 4.5rem;
 }
 
@@ -1889,14 +1889,14 @@ label {
   .skills-title i {
     font-size: 6rem;
   }
-  .projects {
-    margin-top: 90px;
+  .project-container {
+    margin-top: 50px;
   }
-  .projects .project-text,
-  .projects .project-text:nth-child(1) {
+  .project-container .project-text,
+  .project-container .project-text:nth-child(1) {
     text-align: center;
   }
-  .projects .project-text {
+  .project-container .project-text {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1912,6 +1912,7 @@ label {
   }
   .switch-light {
     margin-top: 20px;
+    right: 10px;
   }
   .switch-light .toggle-light {
     left: 73%;
