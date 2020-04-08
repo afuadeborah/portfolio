@@ -1894,6 +1894,9 @@ label {
   .ham-input:checked ~ .hamburger-menu {
     display: block;
   }
+  .form-container .form-text a {
+    font-size: 1.2rem;
+  }
   .switch-light .toggle-light {
     left: 73%;
     width: 50px;

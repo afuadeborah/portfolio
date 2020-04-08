@@ -11,10 +11,6 @@ app.menuSlide = () => {
     menuLinks.on('click', function(){
         
         checkbox.prop('checked', false);
-
-        // if (checked === true){
-        //     hamMenu.show();
-        // } 
         
     })    
 
