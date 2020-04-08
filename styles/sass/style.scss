@@ -107,7 +107,7 @@ label {
     li {
         flex-basis: 20%;
 
-        i {
+        span {
             font-size: 4rem;
 
             &:hover {
@@ -237,7 +237,7 @@ label {
     .project {
         flex-direction: column;
 
-        i {
+        .made-with span {
             @include font-size(41);
         }
 
@@ -294,7 +294,7 @@ label {
         flex-basis: 40%;
         margin: 0;
 
-        i {
+        span {
             @include font-size(60);
         }
     }

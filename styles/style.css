@@ -1156,7 +1156,7 @@ body.light {
   color: #030200;
 }
 
-body.light i,
+body.light span,
 body.light .skills-title p,
 body.light a,
 body.light h1 {
@@ -1728,20 +1728,20 @@ label {
       flex-basis: 20%;
 }
 
-.socials li i {
+.socials li span {
   font-size: 4rem;
 }
 
-.socials li i:hover {
+.socials li span:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.socials li i:active {
+.socials li span:active {
   border-bottom: 4px solid #FFA818;
 }
 
-.socials li i:focus {
+.socials li span:focus {
   outline: 1px dotted #FFA818;
 }
 
@@ -1842,7 +1842,7 @@ label {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .project i {
+  .project .made-with span {
     font-size: 4.1rem;
   }
   .project h4,
@@ -1886,7 +1886,7 @@ label {
         flex-basis: 40%;
     margin: 0;
   }
-  .skills-title i {
+  .skills-title span {
     font-size: 6rem;
   }
   .project-container {
