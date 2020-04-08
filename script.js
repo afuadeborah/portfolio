@@ -3,20 +3,15 @@ const app = {};
 
 // Hamburger Menu
 app.menuSlide = () => {
-    const hamMenu = $('#ham');
     const menuLinks = $('.ham-link');
     const checkbox = $('#ham-check');
-    const checked = $('#ham-check:checked');
 
     menuLinks.on('click', function(){
         
         checkbox.prop('checked', false);
         
     })    
-
-    
-
-    
+  
 }
 
 // Arrow to Display About Me
@@ -49,23 +44,6 @@ app.switchLight = () => {
 
     })
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // Doc Init
@@ -173,10 +151,9 @@ app.init = () => {
 
 }
 
+
 // Doc Ready
 $(function(){
     app.init();
     AOS.init();
-
-   
 });

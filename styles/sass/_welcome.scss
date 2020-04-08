@@ -1,10 +1,25 @@
 // Landing Page
+.welcome,
+.toggle-light {
+    display: flex;
+}
+
+.arrow,
+.switch-light,
+.light-check,
+.switch {
+    position: absolute;
+}
+
+.arrow,
+.toggle-light {
+    cursor: pointer;
+}
+
+
 
 .welcome {
-    background-color: $black;
-    color: $white;
     min-height: 90vh;
-    display: flex;
     flex-direction: column;
     justify-content: center;
 
@@ -17,8 +32,6 @@
 
 .arrow {
     @include font-size(55);
-    cursor: pointer;
-    position: absolute;
     left: 50%;
     right: 50%;
     
@@ -36,8 +49,8 @@
 // Special credits to Florin Pop's Codepen for the Light Theme toggle https://codepen.io/FlorinPop17/pen/XWWZYYG
 
 body.light {
-background-color: $white;
-color: $black;
+    background-color: $white;
+    color: $black;
 
     span,
     .skills-title p,
@@ -71,7 +84,6 @@ color: $black;
 .switch-light {
     margin-top: 15px;
     transform: rotate(90deg);
-    position: absolute;
     right: 0;
     top: 80%;
 
@@ -79,8 +91,6 @@ color: $black;
         display: block;
         background-color: $black;
         border-radius: 50px;
-        cursor: pointer;
-        display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 5px;
@@ -94,13 +104,11 @@ color: $black;
 
     .light-check {
         opacity: 0;
-        position: absolute;
     }
 
     .switch {
         background-color: $white;
         border-radius: 50%;
-        position: absolute;
         top: 3px;
         left: -11px;
         height: 15px;
