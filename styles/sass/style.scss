@@ -294,15 +294,18 @@ label {
             @include font-size(60);
         }
     }
-
-    .project-text,
-    .project-text:nth-child(1)  {
-        text-align: center;
+    .projects {
+        margin-top: 90px;
         
-    }
-    
-    .project-text {
-        align-items: center;
+        .project-text,
+        .project-text:nth-child(1)  {
+            text-align: center;
+            
+        }
+        
+        .project-text {
+            align-items: center;
+        }
     }
 
     .hamburger-menu {
