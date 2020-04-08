@@ -276,6 +276,10 @@ label {
         @include font-size(33);
     }
 
+    .arrow {
+        left: 45%;
+    }
+
     .about-me-container .about-pic {
         width: 90%;
     }
@@ -320,6 +324,10 @@ label {
         @include font-size(12);
     }
 
+    .switch-light {
+        margin-top: 20px;
+    }
+
 
 
     // Light Mode
@@ -336,11 +344,15 @@ label {
         }
 
         .switch {
-            top: 3px;
+            top: 5px;
             left: -12px;
             height: 12px;
             width: 12px;
-            transform: translateX(16px);
+            transform: translateX(17px);
+        }
+       
+        input:checked + .toggle-light .switch {
+            transform: translateX(43px);
         }
     }
     

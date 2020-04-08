@@ -70,6 +70,10 @@ color: $black;
   
 .switch-light {
     margin-top: 15px;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 0;
+    top: 80%;
 
     .toggle-light {
         display: block;
@@ -85,7 +89,7 @@ color: $black;
         width: 60px;
         transform: scale(1.5);
         left: 85%;
-        border: 2px solid white;
+        border: 1px solid white;
     }
 
     .light-check {
@@ -97,16 +101,16 @@ color: $black;
         background-color: $white;
         border-radius: 50%;
         position: absolute;
-        top: 2px;
-        left: -4px;
+        top: 3px;
+        left: -11px;
         height: 15px;
         width: 15px;
-        transform: translateX(9px);
+        transform: translateX(16px);
         transition: transform 0.2s linear;
     }
 
     input:checked + .toggle-light .switch {
-        transform: translateX(40px);
+        transform: translateX(48px);
     }
 
     .fa-sun,
@@ -120,6 +124,7 @@ color: $black;
 
     .fa-moon {
         color: $yellow ;
+        transform: rotate(-90deg);
     }
 }
 

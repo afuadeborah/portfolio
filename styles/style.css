@@ -1185,6 +1185,11 @@ body.light .fa-moon {
 
 .switch-light {
   margin-top: 15px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: absolute;
+  right: 0;
+  top: 80%;
 }
 
 .switch-light .toggle-light {
@@ -1208,7 +1213,7 @@ body.light .fa-moon {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
   left: 85%;
-  border: 2px solid white;
+  border: 1px solid white;
 }
 
 .switch-light .light-check {
@@ -1220,12 +1225,12 @@ body.light .fa-moon {
   background-color: #F8F8F8;
   border-radius: 50%;
   position: absolute;
-  top: 2px;
-  left: -4px;
+  top: 3px;
+  left: -11px;
   height: 15px;
   width: 15px;
-  -webkit-transform: translateX(9px);
-          transform: translateX(9px);
+  -webkit-transform: translateX(16px);
+          transform: translateX(16px);
   -webkit-transition: -webkit-transform 0.2s linear;
   transition: -webkit-transform 0.2s linear;
   transition: transform 0.2s linear;
@@ -1233,8 +1238,8 @@ body.light .fa-moon {
 }
 
 .switch-light input:checked + .toggle-light .switch {
-  -webkit-transform: translateX(40px);
-          transform: translateX(40px);
+  -webkit-transform: translateX(48px);
+          transform: translateX(48px);
 }
 
 .switch-light .fa-sun,
@@ -1248,6 +1253,8 @@ body.light .fa-moon {
 
 .switch-light .fa-moon {
   color: #FFA818;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .about-name,
@@ -1861,6 +1868,9 @@ label {
   h1 {
     font-size: 3.3rem;
   }
+  .arrow {
+    left: 45%;
+  }
   .about-me-container .about-pic {
     width: 90%;
   }
@@ -1900,6 +1910,9 @@ label {
   .form-container .form-text a {
     font-size: 1.2rem;
   }
+  .switch-light {
+    margin-top: 20px;
+  }
   .switch-light .toggle-light {
     left: 73%;
     width: 50px;
@@ -1909,11 +1922,15 @@ label {
     font-size: 1.1rem;
   }
   .switch-light .switch {
-    top: 3px;
+    top: 5px;
     left: -12px;
     height: 12px;
     width: 12px;
-    -webkit-transform: translateX(16px);
-            transform: translateX(16px);
+    -webkit-transform: translateX(17px);
+            transform: translateX(17px);
+  }
+  .switch-light input:checked + .toggle-light .switch {
+    -webkit-transform: translateX(43px);
+            transform: translateX(43px);
   }
 }
