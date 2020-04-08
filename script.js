@@ -3,13 +3,24 @@ const app = {};
 
 // Hamburger Menu
 app.menuSlide = () => {
-    const menuLinks = $('#ham');
+    const hamMenu = $('#ham');
+    const menuLinks = $('.ham-link');
     const checkbox = $('#ham-check');
+    const checked = $('#ham-check:checked');
 
     menuLinks.on('click', function(){
+        
         checkbox.prop('checked', false);
 
+        // if (checked === true){
+        //     hamMenu.show();
+        // } 
+        
     })    
+
+    
+
+    
 }
 
 // Arrow to Display About Me
@@ -170,4 +181,6 @@ app.init = () => {
 $(function(){
     app.init();
     AOS.init();
+
+   
 });

@@ -57,7 +57,7 @@ a {
 
 
 body {
-    @include font-size(18);
+    @include font-size(20);
     font-family: $body-font;
     background-color: $black;
     color: $white;
@@ -303,7 +303,14 @@ label {
     
     .project-text {
         align-items: center;
-    
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .ham-input:checked ~ .hamburger-menu {
+        display: block;
     }
 
     // Light Mode

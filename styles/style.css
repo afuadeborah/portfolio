@@ -166,6 +166,18 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box;
 }
 
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+  /* added line */
+}
+
 /*!
  *  Devicons 1.8.0 made by Theodore Vorillas / http://vorillaz.com 
  */
@@ -1647,7 +1659,7 @@ a {
 }
 
 body {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-family: "Sen", sans-serif;
   background-color: #030200;
   color: #F8F8F8;
@@ -1763,7 +1775,7 @@ label {
   .project-text:nth-child(2),
   .mockup:nth-child(2),
   form,
-  .form-text {
+  .form-container .form-text {
     margin: 0 auto;
   }
   .project-container .project-two,
@@ -1875,6 +1887,12 @@ label {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  .ham-input:checked ~ .hamburger-menu {
+    display: block;
   }
   .switch-light .toggle-light {
     left: 73%;
