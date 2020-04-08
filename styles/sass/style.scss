@@ -100,6 +100,10 @@ label {
     display: none;
 }
 
+footer p {
+    @include font-size(15);
+}
+
 // Contact Icons
 .socials {
     justify-content: center;
