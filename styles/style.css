@@ -1204,7 +1204,6 @@ body.light .fa-moon {
 }
 
 .switch-light .toggle-light {
-  display: block;
   background-color: #030200;
   border-radius: 50px;
   -webkit-box-align: center;
@@ -1744,10 +1743,6 @@ footer p {
 .socials li span:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-}
-
-.socials li span:active {
-  border-bottom: 4px solid #FFA818;
 }
 
 .socials li span:focus {
