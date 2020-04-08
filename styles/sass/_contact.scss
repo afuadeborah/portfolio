@@ -17,10 +17,6 @@ form {
         @include underline($yellow);
     }
 
-    .socials i:hover {
-        color: $yellow;
-    }
-
     .back-to-top {
         margin-top: 20%;
         cursor: pointer;
@@ -30,6 +26,8 @@ form {
             transform: scale(1.2);
         }
     }
+
+
 }
 
 
@@ -106,7 +104,10 @@ textarea::placeholder {
         }
 
     }
+
 }
+
+
 
 
 // Footer

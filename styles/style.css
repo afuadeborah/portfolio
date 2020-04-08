@@ -1341,10 +1341,6 @@ body.light .fa-moon {
   font-weight: bold;
 }
 
-.about-text .socials i:hover {
-  color: #F06000;
-}
-
 .skills {
   height: 100%;
 }
@@ -1500,10 +1496,6 @@ form {
 .contact .form-text a:hover {
   -webkit-box-shadow: inset 0px -5px 0px 0px #FFA818;
           box-shadow: inset 0px -5px 0px 0px #FFA818;
-}
-
-.contact .socials i:hover {
-  color: #FFA818;
 }
 
 .contact .back-to-top {
@@ -1743,6 +1735,7 @@ footer p {
 .socials li span:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  color: #F06000;
 }
 
 .socials li span:focus {
