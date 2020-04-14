@@ -1538,6 +1538,7 @@ form input {
 form textarea {
   line-height: 1.3;
   text-align: left;
+  resize: none;
 }
 
 form button {
