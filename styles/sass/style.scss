@@ -262,6 +262,10 @@ footer p {
             br {
                 margin: 0;
             }
+
+            a {
+                @include font-size(15);
+            }
         }
 
     }
