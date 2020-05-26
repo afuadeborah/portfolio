@@ -1,9 +1,10 @@
-.projects {
+// Current Projects & Projects
+.projects,
+.current {
     height: 100%;
 
     h2 span {
-        @include underline($orange);
-
+        @include underline($yellow);
     }
 
 
@@ -16,11 +17,17 @@
     }
 }
 
+.projects h2 span,
+.current-title {
+    margin: 5% auto;
+}
+
 .project {
     display: flex;
 
     .made-with span {
         font-size: 4.5rem;
+        margin: 0 0.1em;
 
     } 
 
@@ -28,7 +35,7 @@
         text-transform: uppercase;
 
         &:hover {
-            text-decoration: underline 4px $orange; 
+            text-decoration: underline 4px $yellow; 
         }
     }
     
@@ -56,6 +63,7 @@
     .project-icons-container {
         display: flex;
     
+    
     }
     
 }
@@ -77,6 +85,26 @@
 .mockup:nth-child(1){
     margin-right: 50px;
 }
+
+.current {
+    
+    h2 span {
+        @include underline($orange);
+    }
+
+    .current-title {
+        text-align: center;
+    }
+
+    .project a {
+
+        &:hover {
+            text-decoration: underline 4px $orange; 
+        }
+    }
+
+}
+
 
 
 
