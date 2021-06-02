@@ -109,7 +109,7 @@ h3,
 .work-title,
 .skills-title {
     flex-basis: 23%;
-    margin: 10px;
+    margin: 20px 10px;
     padding: 10px;
 
         span {
@@ -128,3 +128,8 @@ h3,
         }
 }
 
+.work-stack span {
+    &:hover {
+        color: $yellow
+    }
+}
