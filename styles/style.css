@@ -1650,6 +1650,73 @@ h3,
   margin: 15px 0;
 }
 
+.case-study-header .case-title,
+.case-about li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.case-study-header {
+  margin: 6% auto;
+}
+
+.case-study-header .case-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.case-study-header .case-title h1 span {
+  -webkit-box-shadow: inset 0px -5px 0px 0px #FFA818;
+          box-shadow: inset 0px -5px 0px 0px #FFA818;
+}
+
+.case-about h2 {
+  font-size: 2.4rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.case-about h2 span {
+  margin-left: 30px;
+  font-weight: lighter;
+}
+
+.case-about .date {
+  text-transform: uppercase;
+  margin: 25px auto;
+}
+
+.case-about li {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+}
+
+.case-about li p {
+  margin-left: 10px;
+}
+
+.case-about li::before {
+  content: "\2022";
+  display: inline-block;
+  width: 1em;
+  margin-left: 0em;
+}
+
 .form-container,
 form,
 .back-to-top {

@@ -1,0 +1,57 @@
+// Case Studies
+.case-study-header .case-title,
+.case-about li {
+    display: flex;
+}
+
+.case-study-header {
+    margin: 6% auto;
+
+    .case-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 span {
+            @include underline($yellow);
+        }
+    
+    
+    
+    }
+}
+
+.case-about {
+    h2 {
+        @include font-size(24);
+        flex-direction: row;
+        align-items: flex-start;
+
+
+        span {
+            margin-left: 30px;
+            font-weight: lighter;
+        }
+    }
+
+    .date {
+        text-transform: uppercase;
+        margin: 25px auto;
+    }
+
+    li {
+        align-items: center;
+        margin: 10px 0;
+
+        p {
+            margin-left: 10px;
+        }
+    }
+    
+    li::before {
+        content: "\2022";  
+        display: inline-block; 
+        width: 1em;
+        margin-left: 0em; 
+    }
+}
