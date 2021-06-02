@@ -1303,6 +1303,7 @@ body.light .fa-moon {
 }
 
 .about-text p a:hover,
+.freelance h2 span,
 .about-name h2 {
   -webkit-box-shadow: inset 0px -5px 0px 0px #F06000;
           box-shadow: inset 0px -5px 0px 0px #F06000;
@@ -1341,16 +1342,19 @@ body.light .fa-moon {
   font-weight: bold;
 }
 
+.work,
 .skills {
   height: 100%;
 }
 
+.work h2 span,
 .skills h2 span {
   -webkit-box-shadow: inset 0px -5px 0px 0px #FFA818;
           box-shadow: inset 0px -5px 0px 0px #FFA818;
 }
 
 h3,
+.work p,
 .skills p {
   font-weight: lighter;
 }
@@ -1361,6 +1365,7 @@ h3,
   margin: 6% auto;
 }
 
+.work-title,
 .skills-title {
   -ms-flex-preferred-size: 23%;
       flex-basis: 23%;
@@ -1368,16 +1373,19 @@ h3,
   padding: 10px;
 }
 
+.work-title span,
 .skills-title span {
   font-size: 6.5rem;
 }
 
+.work-title span:hover,
 .skills-title span:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  color: #FFA818;
+  color: #F06000;
 }
 
+.work-title p,
 .skills-title p {
   text-align: center;
   font-size: 1.5rem;
@@ -1412,7 +1420,23 @@ h3,
   margin: 5% auto;
 }
 
-.project {
+.education-text {
+  margin: 5% 0;
+  width: 70%;
+}
+
+.skills h2 span,
+.projects h2 span,
+.education {
+  -webkit-box-shadow: inset 0px -5px 0px 0px #F06000;
+          box-shadow: inset 0px -5px 0px 0px #F06000;
+}
+
+.mockup,
+.project-text,
+.project-text .project-icons-container,
+.project,
+.top-projects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1428,23 +1452,29 @@ h3,
 }
 
 .project a:hover {
-  -webkit-text-decoration: underline 4px #FFA818;
-          text-decoration: underline 4px #FFA818;
+  -webkit-text-decoration: underline 4px #F06000;
+          text-decoration: underline 4px #F06000;
 }
 
 .project p:first-of-type {
   margin: 5px 0;
 }
 
+.edu-welcome {
+  height: 80vh;
+}
+
 .mockup,
-.project-text {
-  width: calc(50% - 50px);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.project-text,
+.top-projects {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.mockup,
+.project-text {
+  width: calc(50% - 50px);
 }
 
 .mockup {
@@ -1458,12 +1488,6 @@ h3,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.project-text .project-icons-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .project-text:nth-child(2),
@@ -1486,11 +1510,6 @@ h3,
   margin-right: 50px;
 }
 
-.current h2 span {
-  -webkit-box-shadow: inset 0px -5px 0px 0px #F06000;
-          box-shadow: inset 0px -5px 0px 0px #F06000;
-}
-
 .current .current-title {
   text-align: center;
 }
@@ -1498,6 +1517,133 @@ h3,
 .current .project a:hover {
   -webkit-text-decoration: underline 4px #F06000;
           text-decoration: underline 4px #F06000;
+}
+
+.work,
+.work-one,
+.work-icons-container,
+.logo,
+.work-list li,
+.work-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.work {
+  height: 100%;
+}
+
+.work h2 span {
+  -webkit-box-shadow: inset 0px -5px 0px 0px #FFA818;
+          box-shadow: inset 0px -5px 0px 0px #FFA818;
+}
+
+.work h3,
+.work h4,
+.work .icon-text,
+.work .work-links,
+.work .work-icons-container {
+  margin: 10px 0;
+}
+
+.work .date-location {
+  font-size: 1.8rem;
+}
+
+.work .made-with span {
+  font-size: 4.5rem;
+  margin: 0 0.1em;
+}
+
+.work a {
+  text-transform: uppercase;
+}
+
+.work a:hover {
+  -webkit-text-decoration: underline 4px #FFA818;
+          text-decoration: underline 4px #FFA818;
+}
+
+.work p:first-of-type {
+  margin: 5px 0;
+}
+
+.work .work-text {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.work .work-list {
+  margin: 1em 0;
+}
+
+.work .work-list p {
+  font-size: 1.8rem;
+  text-transform: none;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.work .work-list li {
+  margin: 10px 0;
+}
+
+.work .work-list li::before {
+  content: "\2022";
+  display: inline-block;
+  width: 1em;
+  margin-left: 0em;
+}
+
+.work .work-list span {
+  margin-left: 20px;
+}
+
+.work h2 span,
+.freelance-title {
+  margin: 5% auto;
+}
+
+.work-text {
+  width: calc(70% - 50px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.logo {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.work-text:nth-child(2),
+.logo:nth-child(2) {
+  margin-left: 50px;
+}
+
+.work-text:nth-child(1) {
+  text-align: right;
+}
+
+.work-text:nth-child(1) .work-icons-container {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.work-text:nth-child(1),
+.logo:nth-child(1) {
+  margin-right: 50px;
+}
+
+.freelance .project-links {
+  margin: 15px 0;
 }
 
 .form-container,
@@ -1527,7 +1673,6 @@ form {
 
 .contact .back-to-top {
   margin-top: 20%;
-  cursor: pointer;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1706,12 +1851,17 @@ h2,
 h3,
 h4,
 .back-to-top,
+.work p,
 .skills p,
 button,
 label,
 footer p {
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.back-to-top {
+  cursor: pointer;
 }
 
 h1 {
@@ -1861,6 +2011,34 @@ footer p {
   }
   .skills-title p {
     font-size: 1.2rem;
+  }
+  .work .work-one {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .work .work-one .logo {
+    width: 100%;
+    margin-right: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .work .work-text {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+  .work .work-list li {
+    margin: 20px 0;
+  }
+  .work .work-list li::before {
+    display: none;
+  }
+  .work img {
+    max-height: 400px;
+    max-width: 400px;
   }
   .project {
     -webkit-box-orient: vertical;

@@ -6,6 +6,7 @@
 @import 'welcome';
 @import 'about';
 @import 'projects';
+@import 'work';
 @import 'contact';
 
 
@@ -72,12 +73,17 @@ h2,
 h3,
 h4,
 .back-to-top,
+.work p,
 .skills p,
 button,
 label,
 footer p {
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.back-to-top {
+    cursor: pointer;
 }
 
 h1 {
@@ -120,7 +126,7 @@ footer p {
             }
 
             &:focus {
-               outline: 1px dotted $yellow; 
+                outline: 1px dotted $yellow; 
             }
 
         }
@@ -233,6 +239,42 @@ footer p {
     .skills-title p {
         @include font-size(12);
     }
+
+// Work
+    .work {
+        .work-one {
+            flex-direction: column;
+
+            .logo {
+                width: 100%;
+                margin-right: 0;
+                justify-content: center;
+            }
+        }
+
+        .work-text {
+            width: 100%;
+            margin-left: 0;
+            text-align: center;
+        }
+
+        .work-list {
+            li {
+                margin: 20px 0;
+            }
+
+            li::before {
+            display: none;
+        
+            }
+        }
+
+        img {
+            max-height: 400px;
+            max-width: 400px;
+        }
+    }
+
 
 
 // Projects

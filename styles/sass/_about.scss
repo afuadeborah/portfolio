@@ -33,6 +33,7 @@
 }
 
 .about-text p a:hover,
+.freelance h2 span,
 .about-name h2 {
     @include underline($orange);
 }
@@ -77,12 +78,12 @@
 
     }
     
-   
 
+// Work Section
 
 
 // Skills Section
-
+.work,
 .skills  {
     height: 100%;
 
@@ -94,10 +95,10 @@
 }
 
 h3,
+.work p,
 .skills p {
     font-weight: lighter;
 }
-
 
 .skills-container {
     flex-wrap: wrap;
@@ -105,7 +106,7 @@ h3,
 
 }
 
-
+.work-title,
 .skills-title {
     flex-basis: 23%;
     margin: 10px;
@@ -117,7 +118,7 @@ h3,
             
             &:hover {
                 transform: scale(1.1);
-                color: $yellow;
+                color: $orange;
             }
         }
 
