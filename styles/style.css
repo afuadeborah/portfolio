@@ -1592,14 +1592,7 @@ h3,
 }
 
 .work .work-list li {
-  margin: 10px 0;
-}
-
-.work .work-list li::before {
-  content: "\2022";
-  display: inline-block;
-  width: 1em;
-  margin-left: 0em;
+  margin: 20px 0;
 }
 
 .work .work-list span {
@@ -2019,6 +2012,8 @@ footer p {
   }
   .about-me-container .about-text,
   form,
+  .case-links,
+  .case-links:nth-of-type(1),
   .form-text {
     text-align: center;
   }
@@ -2200,6 +2195,9 @@ footer p {
   }
   .work-skills {
     margin: 5% auto;
+  }
+  .work-skills h3 {
+    margin: 4% auto;
   }
   .hamburger-menu {
     display: none;
