@@ -1657,6 +1657,18 @@ h3,
   display: flex;
 }
 
+.case-intervention h2 span,
+.case-result h2 span,
+.case-study-header .case-title h1 span {
+  -webkit-box-shadow: inset 0px -5px 0px 0px #FFA818;
+          box-shadow: inset 0px -5px 0px 0px #FFA818;
+}
+
+.case-intervention h2 span,
+.case-result h2 span {
+  margin: 3% 0;
+}
+
 .case-study-header {
   margin: 6% auto;
 }
@@ -1673,11 +1685,6 @@ h3,
           align-items: center;
 }
 
-.case-study-header .case-title h1 span {
-  -webkit-box-shadow: inset 0px -5px 0px 0px #FFA818;
-          box-shadow: inset 0px -5px 0px 0px #FFA818;
-}
-
 .case-about h2 {
   font-size: 2.4rem;
   -webkit-box-orient: horizontal;
@@ -1689,7 +1696,7 @@ h3,
           align-items: flex-start;
 }
 
-.case-about h2 span {
+.case-about h2 .design {
   margin-left: 30px;
   font-weight: lighter;
 }
@@ -1787,8 +1794,8 @@ form textarea {
 form button {
   padding: 8px 30px;
   background-color: #F06000;
-  border-radius: 3px;
-  margin-top: 10px;
+  border-radius: 2px;
+  margin-top: 20px;
 }
 
 input::-webkit-input-placeholder,
@@ -2034,6 +2041,7 @@ footer p {
   .project-container .current-two,
   .project-container .project-two,
   .project-container .project-four,
+  .work-container .work-one,
   .form-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -2041,6 +2049,7 @@ footer p {
             flex-direction: column-reverse;
   }
   .about-me-container .about-text,
+  .work-container .work-text,
   .mockup,
   .project-text {
     width: 100%;
@@ -2167,17 +2176,30 @@ footer p {
   .skills-title span {
     font-size: 6rem;
   }
+  .work-container,
   .project-container {
     margin-top: 50px;
   }
+  .work-container .work-text,
+  .work-container h3,
+  .work-container .project-text,
+  .work-container .project-text:nth-child(1),
+  .project-container .work-text,
+  .project-container h3,
   .project-container .project-text,
   .project-container .project-text:nth-child(1) {
     text-align: center;
   }
+  .work-container .work-text,
+  .work-container .project-text,
+  .project-container .work-text,
   .project-container .project-text {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .work-skills {
+    margin: 5% auto;
   }
   .hamburger-menu {
     display: none;

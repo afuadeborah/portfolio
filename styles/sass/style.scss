@@ -186,11 +186,13 @@ footer p {
     .project-container .current-two,
     .project-container .project-two,
     .project-container .project-four,
+    .work-container .work-one,
     .form-container {
         flex-direction: column-reverse;
     }
 
     .about-me-container .about-text,
+    .work-container .work-text,
     .mockup,
     .project-text {
         width: 100%;
@@ -348,18 +350,25 @@ footer p {
         }
     }
     
+    .work-container,
     .project-container {
         margin-top: 50px;
     
+        .work-text,
+        h3,
         .project-text,
         .project-text:nth-child(1)  {
             text-align: center;
             
         }
-        
+        .work-text,
         .project-text {
             align-items: center;
         }
+    }
+
+    .work-skills {
+        margin: 5% auto;
     }
     
 
@@ -374,6 +383,7 @@ footer p {
     .form-container .form-text a {
         @include font-size(12);
     }
+
 
     // Light Mode
     .switch-light {
@@ -397,7 +407,7 @@ footer p {
             width: 12px;
             transform: translateX(17px);
         }
-       
+
         input:checked + .toggle-light .switch {
             transform: translateX(43px);
         }
