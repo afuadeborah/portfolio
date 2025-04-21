@@ -32,6 +32,11 @@
     justify-content: center;
 }
 
+.skills-container.stack-list {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
 .about-text p a:hover,
 .freelance h2 span,
 .about-name h2 {
@@ -99,7 +104,7 @@ h3,
 
 .skills-container {
     flex-wrap: wrap;
-    margin: 6% auto;
+    margin: 2% auto 6%;
 
 }
 

@@ -11,7 +11,7 @@ app.menuSlide = () => {
         checkbox.prop('checked', false);
         
     })    
-  
+
 }
 
 // Arrow to Display About Me
@@ -151,7 +151,7 @@ app.init = () => {
         m.current_length = 0;
         m.fadeBuffer = false;
         m.messages = [
-            'Education + Projects'
+            'Projects'
         ];
         
         setTimeout(m.animateIn, 100);

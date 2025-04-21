@@ -170,6 +170,7 @@ footer p {
     }
 
     .about-name,
+    .work h2,
     h2,
     .about-me-container .about-me {
         align-items: flex-start;
@@ -243,6 +244,7 @@ footer p {
     
     .skills-title p {
         @include font-size(12);
+        margin-top: 8px;
     }
 
 // Work
@@ -277,6 +279,11 @@ footer p {
         img {
             max-height: 400px;
             max-width: 400px;
+        }
+
+        h3 {
+            text-align: center;
+            margin: 4% auto;
         }
     }
 
@@ -357,7 +364,6 @@ footer p {
         margin-top: 50px;
     
         .work-text,
-        h3,
         .project-text,
         .project-text:nth-child(1)  {
             text-align: center;
@@ -371,10 +377,6 @@ footer p {
 
     .work-skills {
         margin: 5% auto;
-
-        h3 {
-            margin: 4% auto;
-        }
     }
     
 
