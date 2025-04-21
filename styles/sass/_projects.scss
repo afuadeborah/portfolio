@@ -22,8 +22,26 @@
     margin: 5% auto;
 }
 
-.project {
+.education-text {
+    margin: 5% 0;
+    width: 70%;
+}
+
+.skills h2 span,
+.projects h2 span,
+.education {
+    @include underline($orange);
+}
+
+.mockup,
+.project-text,
+.project-text .project-icons-container, 
+.project,
+.top-projects {
     display: flex;
+}
+
+.project {
 
     .made-with span {
         font-size: 4.5rem;
@@ -35,22 +53,30 @@
         text-transform: uppercase;
 
         &:hover {
-            text-decoration: underline 4px $yellow; 
+            text-decoration: underline 4px $orange; 
         }
     }
     
     p:first-of-type {
         margin: 5px 0;
     }
+}
 
+.edu-welcome {
+    height: 80vh;
+}
+
+
+.mockup,
+.project-text, 
+.top-projects {
+    justify-content: center;
 }
 
 
 .mockup,
 .project-text {
     width: calc(50% - 50px);
-    display: flex;
-    justify-content: center;
 }
 
 .mockup {
@@ -59,12 +85,6 @@
 
 .project-text {
     flex-direction: column;
-
-    .project-icons-container {
-        display: flex;
-    
-    
-    }
     
 }
 
@@ -87,10 +107,6 @@
 }
 
 .current {
-    
-    h2 span {
-        @include underline($orange);
-    }
 
     .current-title {
         text-align: center;

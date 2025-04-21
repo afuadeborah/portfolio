@@ -6,6 +6,7 @@
 @import 'welcome';
 @import 'about';
 @import 'projects';
+@import 'work';
 @import 'contact';
 
 
@@ -72,12 +73,17 @@ h2,
 h3,
 h4,
 .back-to-top,
+.work p,
 .skills p,
 button,
 label,
 footer p {
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.back-to-top {
+    cursor: pointer;
 }
 
 h1 {
@@ -120,7 +126,7 @@ footer p {
             }
 
             &:focus {
-               outline: 1px dotted $yellow; 
+                outline: 1px dotted $yellow; 
             }
 
         }
@@ -156,11 +162,14 @@ footer p {
 
     .about-me-container .about-text,
     form,
+    .case-links,
+    .case-links:nth-of-type(1),
     .form-text {
         text-align: center;
     }
 
     .about-name,
+    .work h2,
     h2,
     .about-me-container .about-me {
         align-items: flex-start;
@@ -179,11 +188,13 @@ footer p {
     .project-container .current-two,
     .project-container .project-two,
     .project-container .project-four,
+    .work-container .work-one,
     .form-container {
         flex-direction: column-reverse;
     }
 
     .about-me-container .about-text,
+    .work-container .work-text,
     .mockup,
     .project-text {
         width: 100%;
@@ -233,6 +244,46 @@ footer p {
     .skills-title p {
         @include font-size(12);
     }
+
+// Work
+    .work {
+        .work-one, .work-two {
+            flex-direction: column;
+
+            .logo {
+                width: 100%;
+                margin-right: 0;
+                justify-content: center;
+            }
+        }
+
+        .work-text {
+            width: 100%;
+            margin-left: 0;
+            text-align: center;
+        }
+
+        .work-list {
+            li {
+                margin: 20px 0;
+            }
+
+            li::before {
+            display: none;
+            }
+        }
+
+        img {
+            max-height: 400px;
+            max-width: 400px;
+        }
+
+        h3 {
+            text-align: center;
+            margin: 4% auto;
+        }
+    }
+
 
 
 // Projects
@@ -305,18 +356,28 @@ footer p {
         }
     }
     
+    .work-container,
     .project-container {
         margin-top: 50px;
     
+        .work-text,
         .project-text,
         .project-text:nth-child(1)  {
             text-align: center;
             
         }
-        
+        .work-text,
         .project-text {
             align-items: center;
         }
+    }
+
+    .work-skills {
+        margin: 5% auto;
+    }
+
+    .skills-container.stack-list {
+        justify-content: center;
     }
     
 
@@ -331,6 +392,7 @@ footer p {
     .form-container .form-text a {
         @include font-size(12);
     }
+
 
     // Light Mode
     .switch-light {
@@ -354,7 +416,7 @@ footer p {
             width: 12px;
             transform: translateX(17px);
         }
-       
+
         input:checked + .toggle-light .switch {
             transform: translateX(43px);
         }

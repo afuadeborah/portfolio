@@ -13,13 +13,12 @@ form {
     height: 100%;
 
     h2 span,
-    .form-text a:hover {
+    .contact-text a:hover {
         @include underline($orange);
     }
 
     .back-to-top {
         margin-top: 20%;
-        cursor: pointer;
         justify-content: center;
 
         &:hover {
@@ -65,8 +64,8 @@ form {
     button {
         padding: 8px 30px;
         background-color: $orange;
-        border-radius: 3px;
-        margin-top: 10px;
+        border-radius: 2px;
+        margin-top: 20px;
 
     }
 
@@ -85,13 +84,12 @@ textarea::placeholder {
 
 
 
-.form-container {
-    margin: 50px 0;
 
-    .form-text {
-        width: 50%;
-        margin-left: 50px;
-        align-self: stretch;
+
+    .contact-text {
+        max-width: 700px;
+        margin: 5% auto;
+        text-align: center;
 
         br {
             margin: 10px;
@@ -101,12 +99,12 @@ textarea::placeholder {
             @include font-size(18);
             font-weight: bold;
             letter-spacing: 3px;
-
+            text-transform: uppercase;
         }
 
     }
 
-}
+
 
 
 
