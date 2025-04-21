@@ -1354,13 +1354,14 @@ h3,
 .skills-title p {
   text-align: center;
   font-size: 1.5rem;
+  margin-top: 8px;
 }
 
 .work-stack span:hover {
   color: #FFA818;
 }
 
-.skills-title {
+.work-list.skills-title {
   margin: 0;
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -1942,7 +1943,6 @@ footer p {
   }
   .skills-title p {
     font-size: 1.2rem;
-    margin-top: 8px;
   }
   .work .work-one, .work .work-two {
     -webkit-box-orient: vertical;
