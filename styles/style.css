@@ -1257,7 +1257,6 @@ body.light .fa-moon {
 }
 
 .skills-container,
-.skills-title,
 .about-me-container,
 .about-pic,
 .about-text,
@@ -1359,6 +1358,13 @@ h3,
 
 .work-stack span:hover {
   color: #FFA818;
+}
+
+.skills-title {
+  margin: 0;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .projects,
@@ -1938,13 +1944,13 @@ footer p {
     font-size: 1.2rem;
     margin-top: 8px;
   }
-  .work .work-one {
+  .work .work-one, .work .work-two {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .work .work-one .logo {
+  .work .work-one .logo, .work .work-two .logo {
     width: 100%;
     margin-right: 0;
     -webkit-box-pack: center;
@@ -2047,6 +2053,11 @@ footer p {
   }
   .work-skills {
     margin: 5% auto;
+  }
+  .skills-container.stack-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .hamburger-menu {
     display: none;

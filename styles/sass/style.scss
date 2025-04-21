@@ -248,7 +248,7 @@ footer p {
 
 // Work
     .work {
-        .work-one {
+        .work-one, .work-two {
             flex-direction: column;
 
             .logo {
@@ -375,6 +375,10 @@ footer p {
 
     .work-skills {
         margin: 5% auto;
+    }
+
+    .skills-container.stack-list {
+        justify-content: center;
     }
     
 
